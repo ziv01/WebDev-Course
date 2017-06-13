@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+<!-- declaring function changeHeadertext to change header text -->
+    function changeHeadertext() {
+      document.getElementById("header1").innerHTML = "learning JavaScript Language";
+    }
+<!-- declaring function changeImage to change image jpg -->
+    function changeImage() {
+      document.getElementById("image1").src = "https://thumb9.shutterstock.com/display_pic_with_logo/498865/547454218/stock-vector-emoticon-wiping-off-sweat-with-his-hand-feeling-relieved-547454218.jpg";
+    }
+ <!-- declaring function chamgeBackgroundColor to change body background color -->   
+    function chamgeBackgroundColor() {
+      document.body.style.backgroundColor = "lightblue";
+    }
+
+  </script>
+  <title>JavaScript Ex01</title>
+</head>
+
+<body id>
+  <h1 id="header1">Ex1 JavaScript!</h1>
+  <img id="image1" src="https://cdn.pixabay.com/photo/2013/07/18/10/56/smiley-163510_960_720.jpg" alt="Smiley face" height="100" width="120">
+  <br>
+  <button type="button" onclick="changeHeadertext()">Change Header Text</button>
+    <br>
+  <button type="button" onclick="changeImage()">Change Image</button>
+  <br>
+  <button type="button" onclick="chamgeBackgroundColor()">Change Background Color</button>
+
+
+</body>
+
+</html>
