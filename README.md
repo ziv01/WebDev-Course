@@ -1,3 +1,5 @@
-# WebDev-Course- Plunker
+# WebDev-Course
 Web Development Course
-Learning to use Plunker IDE
+# HTML examples
+# CSS examples
+# JavaScript examples
