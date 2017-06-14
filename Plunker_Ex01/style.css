@@ -1,6 +1,9 @@
 /* Styles go here */
 
-body {color: red; background-color: black;
+body {color: black; background-color: lightblue; direction: rtl;
   
 }
 
+#header1 {
+  text-align:center;color:red;background-color:black;
+}
