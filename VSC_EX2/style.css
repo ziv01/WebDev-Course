@@ -3,7 +3,12 @@
 #para1
   {
     font-weight: bold;
-	color: darkblue;
-	text-align: center;
+  	color: darkblue;
+  	text-align: center;
+
   }
- 
+img
+  {
+    width:200px;
+    height:200px;
+  }
