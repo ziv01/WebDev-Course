@@ -1,0 +1,11 @@
+/* Styles go here */
+#main 
+  {
+    color: red;
+	width: 1301px;
+	
+    max-width: 1301px;
+    max-height:1024px;
+    margin: auto;
+    
+  }
