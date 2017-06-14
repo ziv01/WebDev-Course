@@ -1,0 +1,12 @@
+/* Styles go here */
+
+h1 {
+  text-align: center;
+  color: red;
+  background-color: black;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+}
