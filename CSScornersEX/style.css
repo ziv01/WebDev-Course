@@ -1,7 +1,7 @@
 /* Styles go here */
 
 #top-left {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 150px;
@@ -9,7 +9,7 @@
 }
 
 #top-right {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 150px;
@@ -17,7 +17,7 @@
 }
 
 #bottom-left {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 150px;
@@ -26,7 +26,7 @@
 
 #bottom-right
   {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     width: 150px;
