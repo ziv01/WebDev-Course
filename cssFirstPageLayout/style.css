@@ -4,6 +4,14 @@ body {
   direction: rtl;
 }
 
+#myImage
+  {
+    display: block;
+    height: 300px;
+    width: 400px;
+    /* margin: auto; */
+    
+  }
 div.container {
   width: 100%;
   border: 1px solid black;
