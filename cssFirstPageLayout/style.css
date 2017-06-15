@@ -13,8 +13,8 @@ div.container {
 header,
 footer {
   padding: 1em;
-  color: blacke;
-  background-color: lightblue;
+  color: white;
+  background-color: black;
   clear: left;
   text-align: center;
 }
