@@ -1,11 +1,12 @@
 /* Styles go here */
 #main 
   {
-    color: red;
-	width: 1301px;
-	
-    max-width: 1301px;
-    max-height:1024px;
     margin: auto;
-    
-  }
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    color: red;
+    max-width: 1024px;
+    max-height:1301px;
+	text-align: center;
+	}
