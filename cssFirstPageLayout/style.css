@@ -15,7 +15,7 @@ body {
 div.container {
   width: 100%;
   border: 1px solid black;
-  background-color: lightgray;
+  background-color: #e8ebef;
 }
 
 header,
