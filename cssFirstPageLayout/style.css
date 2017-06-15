@@ -1,36 +1,43 @@
 /* Styles go here */
 
-#uper-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 1000px;
-  border: 3px solid #73AD21;
-  max-width: 1000;
-  margin: 20px auto;
+body {
+  direction: rtl;
 }
 
-#top-right {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 150px;
-  border: 3px solid #73AD21;
+div.container {
+  width: 100%;
+  border: 1px solid black;
+  background-color: lightgray;
 }
 
-#bottom-right {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 150px;
-  border: 3px solid #73AD21;
+header,
+footer {
+  padding: 1em;
+  color: blacke;
+  background-color: lightblue;
+  clear: left;
+  text-align: center;
 }
 
-#bottom-left
-  {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 150px;
-    border: 3px solid #73AD21;
-  }
+nav {
+  float: right;
+  max-width: 160px;
+  margin: 0;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+article {
+  margin-right: 170px;
+  border-right: 1px solid gray;
+  padding: 1em;
+  overflow: hidden;
+}
