@@ -1,12 +1,12 @@
 # WebDev-Course
 Web Development Course
 # HTML examples
-* All projects starting with Html*
+* Projects naming convention - Files starting with Html Prefix.
 # CSS examples
-* All projects starting with Css*
+* Projects naming convention - Files starting with Css Prefix.
 # JavaScript examples
-* all projects starting with JavaScript or JS
+* Projects naming convention - Files starting with JavaScript or JS Prefix (newer projects with have JS prefix 16/06/2017).
 # Plunker examples
-* all projects starting with Plnkr
+* Projects naming convention - Files starting with Plnkr Prefix.
 # Visual Studio Code examples
-* All projects starting with VSC*
+* Projects naming convention - Files starting with VSC Prefix.
