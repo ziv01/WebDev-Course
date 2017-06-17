@@ -54,6 +54,12 @@ nav div a {
 nav a:hover { 
     background-color: yellow;
 }
+
+div article {
+  color:white;
+  font-weight:bold;
+  background-color:#9ebdef;
+}
 .article_section {
     border: 3px solid #f7f8f9;
     width: 100%;
@@ -69,7 +75,6 @@ nav a:hover {
     border:3px solid #000;
     box-sizing: border-box;
     padding:1em;
-    background-color:#f9f9f9;
 }
 .article2 {
     position:absolute;
@@ -80,5 +85,4 @@ nav a:hover {
     height: 86%;
     box-sizing: border-box;
     padding:1em;
-    background-color:#f9f9f9;    
 }
