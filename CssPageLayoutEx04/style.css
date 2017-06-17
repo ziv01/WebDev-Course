@@ -1,0 +1,36 @@
+/* Styles go here */
+
+body {
+  margin-bottom: 120px;
+  direction:rtl;
+  height: 600px;
+  border: 2px solid grey;
+}
+
+.container {position: relative;}
+nav {
+float: right;
+width: 33%;
+border:1px solid red;
+}
+
+nav ol a {
+
+  text-decoration:none;
+  }
+nav a:hover {
+  background-color:yellow;
+}  
+
+nav ol li {
+    list-style-type:none;
+}
+section { 
+  margin-right:33%;
+  margin-top:5%;
+  border: 1px solid blue;
+  
+}
+
+
+
