@@ -1,6 +1,6 @@
 
 
-
+/* div section set attributes for the entire page */
 
 
 div.page_layout
@@ -10,25 +10,45 @@ div.page_layout
     border: 1px solid gray;
     position:relative;
     background-color:#adcced;
-   }
+  }
 
-
+/* Setting attributes for the header and footer section
+   Both header and footer are set to have the same 
+   attributes for a clean look*/
+   
+   
 header, footer {
     padding:1em;
     color: white;
     background-color: black;
     text-align: center;
     font-weight:bold;
+    font-size:18px;
 }
+
+/* nav section has a few different sections:
+       "*" nav div section deals with the div section 
+       within the nav tag. it sets the vanbar background
+       color , border and margine.
+       "*" nav div a , sets the attributes for the a links
+       within the nav section. removing the underline from
+       the links and setting font to be bold.
+       "*" the nav a:hover set a yellow background when ever 
+       the mouse hover a link in the navbar.
+       
+   */
 
 nav div {
   padding:1em;
+  border:2px solid grey;
+  background-color:lightgreen;
+  
 }
 nav div a {
   
   text-decoration:none;
   font-weight:bold;
-  background-color:lightred;
+  
 }
 
 nav a:hover { 
@@ -46,7 +66,7 @@ nav a:hover {
     width: 50%;
     margin-left:0%;
     height: 86%;
-    border-top:3px solid #000;
+    border:3px solid #000;
     box-sizing: border-box;
     padding:1em;
     background-color:#f9f9f9;
@@ -55,7 +75,7 @@ nav a:hover {
     position:absolute;
     width: 49%;
     margin-left:50%;
-    border-left: 3px solid #000;
+    border: 3px solid #000;
     border-top:3px solid #000;
     height: 86%;
     box-sizing: border-box;
