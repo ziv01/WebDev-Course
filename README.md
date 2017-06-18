@@ -1,5 +1,5 @@
 # WebDev-Course
-Web Development Course
+ 
 # HTML examples
 * Projects naming convention - Files starting with Html Prefix.
 # CSS examples
