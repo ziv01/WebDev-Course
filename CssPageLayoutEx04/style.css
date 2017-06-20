@@ -2,35 +2,29 @@
 
 body {
   margin-bottom: 120px;
-  direction:rtl;
+  direction: rtl;
   height: 600px;
   border: 2px solid grey;
 }
 
-.container {position: relative;}
 nav {
-float: right;
-width: 33%;
-border:1px solid red;
+  float: right;
+  width: 15%;
 }
 
 nav ol a {
+  text-decoration: none;
+}
 
-  text-decoration:none;
-  }
 nav a:hover {
-  background-color:yellow;
-}  
+  background-color: yellow;
+}
 
 nav ol li {
-    list-style-type:none;
-}
-section { 
-  margin-right:33%;
-  margin-top:5%;
-  border: 1px solid blue;
-  
+  list-style-type: none;
 }
 
-
-
+.clearhack {
+  margin: 5px;
+  clear: left;
+}
