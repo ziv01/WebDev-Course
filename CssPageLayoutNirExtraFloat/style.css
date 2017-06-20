@@ -1,0 +1,47 @@
+/* Styles go here */
+
+body {
+  box-sizing:border-box;
+  border:1px solid grey;
+  height:700px;
+}
+
+header, footer {
+  background-color:black;
+  color:white;
+  padding:1em;
+}
+
+nav {
+  width:100%;
+  text-align:center;
+  background-color:blue;
+}
+
+nav a {
+  text-decoration:none;
+  color:white;
+}
+
+
+ nav a:hover {
+   background-color:yellow;
+ }
+ 
+ #article-left {
+   float:left;
+   width:50%;
+   padding:5px;
+   
+ }
+ #article-right {
+   padding:5px;
+   color:blue;
+ }
+ 
+ 
+ .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
