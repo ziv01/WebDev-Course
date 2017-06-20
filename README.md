@@ -1,4 +1,7 @@
 # WebDev-Course
+* lesson 4 - JavaScript Intruduction.
+* Lesson 5 - Development enviroments- Plnkr VS Visual Studio Code.
+* Lesson 6 - CSS page layout.
  
 # HTML examples
 * Projects naming convention - Files starting with Html Prefix.
