@@ -1,0 +1,79 @@
+/* Styles go here */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-bottom: 3px solid black;
+  height: 80px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+body {
+  margin-top: 80px;
+}
+
+nav {
+  background-color: rgb(63, 72, 204);
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+nav div {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+main {
+  position: relative;
+}
+
+.article-left {
+  position: absolute;
+  width: 50%;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 250px;
+}
+
+.article-right {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: gray;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 20px;
+  border-top: 2px solid black;
+}
+
+.footer-left {
+  position: absolute;
+  left:0;
+}
+
+.footer-right {
+  position: absolute;
+  right:0;
+}
