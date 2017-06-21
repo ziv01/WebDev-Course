@@ -15,6 +15,10 @@ body {
   
 }
 
+.floating-image:hover {
+  border: 2px solid red;
+}
+
 .floating-image {
     display: inline-block;
     width: 150px;
