@@ -1,0 +1,63 @@
+/* Styles go here */
+
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.main-h1 {
+  font-family: tahoma;
+  font-size: 48px;
+}
+
+nav ul {
+  list-style-type: none;
+  /*background-color: blue;*/
+  /*overflow: hidden;*/
+}
+
+nav ul li {
+  float: right;
+  background-color: blue;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 14px;
+  color: yellow;
+  padding: 5px 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:yellow;
+  width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    font-size: 12px;
+    color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a:hover {
+  background-color: DarkBlue;
+}
+
+.dropdown-content a:hover {
+  background-color: gold;
+}
+
