@@ -1,0 +1,29 @@
+
+/* css reset*/
+
+body,ul,h1,li{ margin:0; padding:0}
+
+html {
+
+ box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+
+ box-sizing: inherit;
+
+}
+
+ol, ul {
+
+ list-style: none;
+
+}
+
+img{ border:none;}
+
+/* ---------------------------------------------- */
+
+ 
+תגובה
