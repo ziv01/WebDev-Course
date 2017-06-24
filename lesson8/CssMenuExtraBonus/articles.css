@@ -1,8 +1,8 @@
 /* Articles Styles go here */
 
 article {
-position:relative;
-    max-width:37.5%;
+  position:relative;
+  max-width:37.5%;
 
 
 }
@@ -19,8 +19,6 @@ position:relative;
     width:37%;
     padding: 1em;
     overflow: hidden;
-    border-left: 1px solid gray;
-   
 }
 
 .right-bottom-article {
@@ -43,6 +41,5 @@ position:relative;
     width:50%;
     padding: 1em;
     overflow: hidden;
-    border-left: 1px solid gray;
 }
 
