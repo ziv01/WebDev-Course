@@ -2,7 +2,7 @@
 
 article {
 position:relative;
-    max-width:30%;
+    max-width:37.5%;
 
 
 }
@@ -20,12 +20,15 @@ position:relative;
     padding: 1em;
     overflow: hidden;
     border-left: 1px solid gray;
-    
+   
 }
 
 .right-bottom-article {
   border-top:1px solid grey;
+  box-sizing: border-box;
 }
+
+
 
 #right-bottom-left {
   	position:absolute;
@@ -36,14 +39,10 @@ position:relative;
 }
 
 #right-bottom-right {
-     margin-left: 50%;
+    margin-left: 50%;
     width:50%;
     padding: 1em;
     overflow: hidden;
     border-left: 1px solid gray;
 }
 
-#right-bottom-left h4, #right-bottom-right h4 {
-  background-color:#0c449e;
-  color:white;
-}
