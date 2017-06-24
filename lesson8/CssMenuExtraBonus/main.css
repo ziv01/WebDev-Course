@@ -1,0 +1,31 @@
+/* Main Styles go here */
+
+div.main {
+  border:1px solid grey;
+  width:100%;
+  
+}
+
+header, footer {
+    padding: 2em;
+    color: white;
+    background-color: #04224c;
+    text-align: center;
+    font-family:Montserrat;
+
+}
+
+.footer-left {
+  float: left;
+  color:yellow;
+  vertical-align:middle;
+}
+
+.footer-right {
+  float: right;
+}
+
+footer div a {
+  color:yellow;
+
+}

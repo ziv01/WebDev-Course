@@ -1,0 +1,21 @@
+/* Images Styles go here */
+
+
+#candies::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+#candies {
+  float:right;
+  width:80px;
+  height:90px;
+  padding-top:1em;
+}
+
+#small {
+  width:50px;
+  height:50px;
+}

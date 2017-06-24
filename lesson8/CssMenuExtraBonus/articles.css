@@ -1,0 +1,49 @@
+/* Articles Styles go here */
+
+article {
+position:relative;
+    max-width:30%;
+
+
+}
+#left-article {
+  	position:absolute;
+    width:37%;
+    margin-left: 25%;
+    padding: 1em;
+    overflow: hidden;
+}
+
+#right-article {
+    margin-left: 62.5%;
+    width:37%;
+    padding: 1em;
+    overflow: hidden;
+    border-left: 1px solid gray;
+    
+}
+
+.right-bottom-article {
+  border-top:1px solid grey;
+}
+
+#right-bottom-left {
+  	position:absolute;
+    width:50%;
+    padding: 1em;
+    overflow: hidden;
+  
+}
+
+#right-bottom-right {
+     margin-left: 50%;
+    width:50%;
+    padding: 1em;
+    overflow: hidden;
+    border-left: 1px solid gray;
+}
+
+#right-bottom-left h4, #right-bottom-right h4 {
+  background-color:#0c449e;
+  color:white;
+}
