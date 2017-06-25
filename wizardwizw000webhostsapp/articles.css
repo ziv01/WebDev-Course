@@ -1,0 +1,25 @@
+/* Styles go here */
+
+article {
+position:relative;
+    max-width:30%;
+
+
+}
+#left-article {
+	position:absolute;
+    width:37%;
+    margin-left: 25%;
+    padding: 1em;
+    overflow: hidden;
+}
+
+#right-article {
+	position:relative;
+    margin-left: 62.5%;
+    width:37%;
+    padding: 1em;
+    overflow: hidden;
+    border-left: 1px solid gray;
+    
+}
