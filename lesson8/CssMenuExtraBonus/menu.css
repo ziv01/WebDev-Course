@@ -40,7 +40,8 @@ nav ul li {
   background-color:#EEEBEB;
   width: 100px;
   box-shadow: 10px 10px 5px #888888;
-  margin-left:80%;
+  top:0;
+  margin-left:100%;
   z-index: 1;
 }
 
