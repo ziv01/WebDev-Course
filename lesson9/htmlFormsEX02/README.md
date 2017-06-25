@@ -1,29 +1,27 @@
-תרגיל # 2
-1 .מטרת התרגיל
-בתרגיל זה יהיה ליצור טופס הרשמה לאתר.
-2 .הנחיות
-● ערכו את הקובץ .html.form
-● הוסיפו את שדות הרישום הבאים, לפי שלבים:
- :1 שלב o
-▪ דואר אלקטרוני
-▪ סיסמה
-▪ סיסמה )חזור שנית(
- :2 שלב o
-▪ גיל
-▪ רווק/נשוי
-▪ בחירת תחביבים מרשימה
-▪ זיהוי המפרסם שדרכו הנרשם הגיע לאתר: "W24LCH"
- :3 שלב o
-▪ תמונת פרופיל
-▪ מספר משפטים על עצמי
-● הוסיפו תווית לכל שדה.
-● הוסיפו כותרת לטופס.
-● הוסיפו כפתור איפוס, אשר מאפס את כל השדות בטופס.
-● שמרו את הקובץ והגישו למדריך.
-3 .דגשים למטלה
-● הקפידו להוסיף תיבות קלט מתאימות. למשל: דואר אלקטרוני מסוג email=type input.
-● הקפידו להשתמש בכלי הנכון להצגת השלבים השונים.
-4 .הפנייה למקורות עזר
-HTML Form. טפסים●
-5 .מועד הגשה
-● התרגיל יוגש במהלך מפגש 1
+# HTML Forms - Exercise 2
+1 The purpose of the exercise
+  This exercise will create a registration form for the site.
+# Guidelines
+* Edit the .html.form file
+* Add the following registry fields by steps:
+  1. Block 1
+     * E-mail
+     * Password
+     * Password (repeat)
+  2. Block 2
+     * Age
+     * Single / Married
+     * Choosing hobbies is impressive
+     * Identification of the advertiser whose registered path has reached the site: "W24LCH"
+  3. Block 3
+     * Profile profile
+     * A few sentences about myself
+     * Add a label to each field.
+     * Add a title to the form.
+     * Add a reset button, which resets all fields in the form.
+     * Save the file and submit it to the directory.
+# Highlight the task
+     * Be sure to add appropriate input boxes. For example: email = type input.
+     * Be sure to use the correct tool to view the different steps.
+# Refer to Reference Resources
+    HTML Form. ● Forms
