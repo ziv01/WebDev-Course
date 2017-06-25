@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML forms Ex02</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>HTML forms -Exercise 02</h1>
+  <p></p>
+  <form>
+    <fieldset class="personal-details">
+      <legend>
+        Personal Details
+      </legend>
+      <label for="your-email">Enter your Email: </label>
+      <input type="email" name="email" id="your-email" placeholder="Your Email" required />
+      <br>
+      <br>
+      <label for="password">Enter password: </label>
+      <input type="password" name="email" id="password" required/>
+      <br>
+      <br>
+      <label for="yre-password">Enter Re-Enter passowrd: </label>
+      <input type="password" name="email" id="re-password" required/>
+      <br>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset class="Hobbies">
+      <legend>Status</legend>
+        <label for="your-age">Enter your age: </label>
+        <input type="number" min=1 max=120 value="age" id="your-age" /><br><br>
+        <input type="radio" name="marital status" id="married" value="Married" checked> Married
+        <input type="radio" name="marital status" id="unmarried" value="Unmarried"> Unmarried
+        <br><br>
+        <label for="your-hobbies">choose your hobby(ies): </label>
+        <select name="hobbies" id="your-hobbies" accept="sports">
+          <option>Computers</option>
+          <option>Sports</option>
+          <option>Music</option>          
+          <option>cooking</option>          
+        </select><br>
+        <input type="hidden" value="W24LCH" name="advertiser" />
+    </fieldset><br><br>
+    <fieldset>
+      <legend>About Myself</legend>
+      <label for="my-avatar">Load your Avatar : </label>
+      <input type="file" name="avatar" id="my-avatar" accept="image/*"/><br><br>
+      <textarea value="usrform" name="comment" id="usrform" rows="15" cols="50">Tell us about yourself...</textarea><br><br>     
+    </fieldset>
+    <input type="submit"><br><br>
+    <button type="reset">Reset your form</button>
+  </form>
+</body>
+
+</html>
