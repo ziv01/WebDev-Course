@@ -29,7 +29,12 @@ header, footer {
   float: right;
 }
 
+footer {
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
 footer div a {
   color:yellow;
-
+ 
 }
