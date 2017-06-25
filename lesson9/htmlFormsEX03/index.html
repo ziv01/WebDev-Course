@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML forms Ex03</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>HTML forms -Exercise 03</h1>
+  <p></p>
+  <form>
+    <fieldset class="personal-details">
+      <legend>
+        Personal Details
+      </legend>
+      <label for="your-name">Enter your name: </label>
+      <input type="text" id="your-name" name="your-name" maxlength="30" required/>
+      <br>
+      <label for="your-email">Enter your Email: </label>
+      <input type="email" name="email" id="your-email" placeholder="Your Email" maxlength="30" required />
+      <br>
+      <br>
+      <label for="password">Enter password: </label>
+      <input type="password" name="password" id="password" required/>
+      <br>
+      <br>
+      <label for="yre-password">Enter Re-Enter passowrd: </label>
+      <input type="password" name="repassword" id="re-password" required/>
+      <br>
+      <br>
+      <label for="your-age">Enter your age: </label>
+      <input type="range" min=1 max=120 value="age" id="your-age" name="age" />
+      <br>
+      <br>
+    </fieldset>
+    <br><br>
+    <input type="submit">
+    <br>
+    <br>
+    <button type="reset">Reset your form</button>
+  </form>
+</body>
+
+</html>
