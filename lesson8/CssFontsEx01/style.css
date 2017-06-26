@@ -10,12 +10,15 @@ h1 {
   font-family:tahoma;
 }
 
+nav {
+	background-color:blue;
+
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #888;
     display:inline;
     
 }
