@@ -1,8 +1,14 @@
 /* stylesheet for images css style file */
-div > img{
-   height:200px;
-    width:200px;
+div .first-row img{
+   height:350px;
+    width:291px;
 }
+
+div .second-row-row img{
+   height:100px;
+    width:100px;
+}
+
 
 .images1 {
     float:right;
