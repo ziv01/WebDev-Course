@@ -1,52 +1,24 @@
 /* main stylesheet main.css file */
 
+body {
+	direction:rtl;
+	text-align:right;
+	font-family: 'Ariel (Hebrew)', Ariel;
+	padding:bottom:30px;
 
-/* 
-#first-right {
-	float:right;
-    background-image: url("../images/1908364606615453350.JPG");
 }
 
-#first-center {
-	position:absolute;
-	float:left;
-	width:290px;
-	height:350px;	
-	margin-left:50%;
-    background-image: url("../images/1908364606615453350.JPG");
-}
-
-#first-left {
-	position:absolute;
-	float:left;
-	width:290px;
-	height:350px;
-    background-image: url("../images/1908364606615453350.JPG");
-}
-
-*/
-.main {
-	
-	border:1px solid red;
-	margin:0 auto;
-	/* width:50%; */
-	
- 	
-}
 
 p{
     text-align:center;
 }
 
-/* 
-.images1 {
-    float:right;
-    margin-right:5px;
+header {
+	
+	background-color:#909090;
+	height:33px;
+	top:72px;
+	margin:0px 143px 0px 0px auto;
+	padding:2em;
+	
 }
-
-.images2 {
-    float:right;
-    margin-right:5px;
-}
-
-*/
