@@ -59,11 +59,6 @@ div ul li:first-child a {
 
 
 
-.footer-content:last-child a {
-	border:none;
-}
-
-
 .menu {
 	width:85%;
 }
@@ -99,3 +94,14 @@ a:hover {
   background-color: #adafb2;
 }
 
+
+	a.logo {
+    display: block;
+    width: 142px;
+    height: 93px;
+    position: absolute;
+	top:0;
+	margin-right:120px;
+	margin-top:25px;
+
+}

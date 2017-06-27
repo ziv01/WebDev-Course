@@ -17,20 +17,25 @@ header {
 	
 	background-color:#909090;
 	height:33px;
-	top:72px;
+	top:100px;
 	margin:0px 143px 0px 0px auto;
 	padding:2em;
 	
 }
 
 footer {
-	position:relative;
+
 	background-color:#909090;
 	width: 100%;
     height: 33px;
 	padding:0.5em;
-	
+
 }
+
+footer div ul li {
+	border-left:1px solid white;
+}
+
 
 .footer-content {
 	font-size: 14px;
@@ -44,6 +49,7 @@ footer {
 	color:white;
 	text-decoration:none;
 	padding:5px;
+
 
 }
 * {
