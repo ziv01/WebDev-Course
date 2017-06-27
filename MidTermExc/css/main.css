@@ -1,7 +1,52 @@
 /* main stylesheet main.css file */
 
 
+/* 
+#first-right {
+	float:right;
+    background-image: url("../images/1908364606615453350.JPG");
+}
+
+#first-center {
+	position:absolute;
+	float:left;
+	width:290px;
+	height:350px;	
+	margin-left:50%;
+    background-image: url("../images/1908364606615453350.JPG");
+}
 
 #first-left {
-  background-image: url("../images/1908364606615453350.JPG");
+	position:absolute;
+	float:left;
+	width:290px;
+	height:350px;
+    background-image: url("../images/1908364606615453350.JPG");
 }
+
+*/
+.main {
+	
+	border:1px solid red;
+	margin:0 auto;
+	/* width:50%; */
+	
+ 	
+}
+
+p{
+    text-align:center;
+}
+
+/* 
+.images1 {
+    float:right;
+    margin-right:5px;
+}
+
+.images2 {
+    float:right;
+    margin-right:5px;
+}
+
+*/

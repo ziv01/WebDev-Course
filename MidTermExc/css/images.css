@@ -1,0 +1,40 @@
+/* stylesheet for images css style file */
+div > img{
+   height:200px;
+    width:200px;
+}
+
+.images1 {
+    float:right;
+    margin-right:5px;
+}
+
+.images2 {
+    float:right;
+    margin-right:5px;
+}
+
+.first-row {
+	margin:0 auto;
+	width:50%;
+}
+
+
+.second-row {
+	margin:0 auto;
+	width:50%;
+}
+
+.first-row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+} 
+
+
+.second-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
