@@ -1,13 +1,24 @@
 /* stylesheet main.css */
 
 body {
-	background-color:#666;
+	background-color:#b8c4d8;
 }
 
+/* This section is handled by the first programmer */
 .student-a {
 	color:blue;
 }
 
+
+.student-a a {
+  color:black;
+}
+
+.student-a i {
+    color:green;
+}
+
+/* This section is handled by the second programmer */
 .student-b {
-	color:green;
+	color:gree
 }
