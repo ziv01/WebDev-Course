@@ -1,70 +1,30 @@
 /* stylesheet menu.css file with menu styling */
 
 /* Header dropdown menu section start here */
+
+
 nav ul {
   list-style-type: none;
-  margin-left:190px;
-
-
+  margin-right:450px; 
 }
 
 nav ul li {
-  float: left;
+  float: right;
   background-color: #909090;
-  border-left:1px solid white;
-  margin-top:30px;
 
 }
 
 nav ul li a {
   display: inline-block;
   text-decoration: none;
-  font-size: 16px;
-  font-weight:bold;
+  font-size: 18px;
   color: white;
   padding: 8px 20px;
-
- 
+  border-right:1px solid white;
 }
-
-nav ul li:last-child a {
-	border:none;
+ nav ul li:first-child a {
+	border-right:none;
 }
-
-
-
-/* Footer menu line section start here */
-div ul {
-  list-style-type: none;
-  /*background-color: blue;*/
-  /*overflow: hidden;*/
-
-}
-
-div ul li {
-  float: left;
-  background-color: #909090;
-
-
-}
-
-div ul li a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight:bold;
-  color: white;
-  padding: 8px 20px;
- 
-  
-}
-
-div ul li:first-child a {
-	border:none;
-}
-
-
-
 
 .dropdown {
   position: relative;
@@ -77,12 +37,11 @@ div ul li:first-child a {
   width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-
 }
 
 .dropdown-content a {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
@@ -91,7 +50,7 @@ div ul li:first-child a {
 }
 
 a:hover {
-  color: Blue;
+  background-color: Blue;
 }
 
 .dropdown-content a:hover {
@@ -99,13 +58,31 @@ a:hover {
 }
 
 
-	a.logo {
-    display: block;
-    width: 142px;
-    height: 93px;
-    position: absolute;
-	top:0;
-	margin-right:120px;
-	margin-top:25px;
+/* Footer menu line section start here  */
 
+
+footer div ul {
+  list-style-type: none;
+  margin-right:275px;   
+ 
+
+}
+
+footer div ul li {
+  float: right;
+  background-color: #909090;
+
+}
+
+footer div  ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  padding: 8px 20px;
+  border-right:1px solid white;
+}
+
+footer div ul li:first-child a {
+	border-right:none;
 }

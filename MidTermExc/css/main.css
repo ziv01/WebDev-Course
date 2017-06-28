@@ -2,8 +2,7 @@
 
 body {
 	direction:rtl;
-	text-align:right;
-	font-family: 'Ariel (Hebrew)', Ariel;
+	font-family: 'Arial (Hebrew)', Arial;
 	padding:bottom:30px;
 
 }
@@ -14,7 +13,6 @@ p{
 }
 
 header {
-	
 	background-color:#909090;
 	height:33px;
 	top:100px;
@@ -24,7 +22,7 @@ header {
 }
 
 footer {
-
+	float: right;
 	background-color:#909090;
 	width: 100%;
     height: 33px;
@@ -32,16 +30,14 @@ footer {
 
 }
 
-footer div ul li {
-	border-left:1px solid white;
-}
+
 
 
 .footer-content {
 	font-size: 14px;
     display: block;
 	margin:0 auto;
-	width:70%;
+	width:80%;
 
 }
 
