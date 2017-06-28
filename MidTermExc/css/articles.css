@@ -3,7 +3,7 @@
 
 div.text1 {
     width: 238px;
-    height: 117px;
+    height: 100px;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -13,8 +13,8 @@ div.text1 {
     padding-bottom: 10px;
     padding-left: 10px;
     position: absolute;
-    right: 495px;
-    top: 310px;
+    right: 500px;
+    top: 400px;
     color: #fff;
     background: url(../images/hp_tab_text_bg.png) no-repeat 0 0;
     background-image: url(../images/hp_tab_text_bg.png);
@@ -27,12 +27,17 @@ div.text1 {
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
+
 }
 
 
+.tab1 h5 {
+	padding-bottom:2em;
+}
+	
 div.text2 {
     width: 238px;
-    height: 117px;
+    height: 100px;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -42,8 +47,8 @@ div.text2 {
     padding-bottom: 10px;
     padding-left: 10px;
     position: absolute;
-    left: 550px;
-    top: 310px;
+    left: 540px;
+    top: 400px;
     color: #fff;
     background: url(../images/hp_tab_text_bg.png) no-repeat 0 0;
     background-image: url(../images/hp_tab_text_bg.png);
@@ -70,8 +75,8 @@ div.text3 {
     padding-bottom: 10px;
     padding-left: 10px;
     position: absolute;
-    right: 790px;
-    top: 310px;
+    right: 800px;
+    top: 400px;
     color: #fff;
     background: url(../images/hp_tab_text_bg.png) no-repeat 0 0;
     background-image: url(../images/hp_tab_text_bg.png);
