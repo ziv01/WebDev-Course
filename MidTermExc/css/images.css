@@ -6,7 +6,7 @@ div .first-row img{
 
 div .second-row-row img{
    height:200px;
-    width:200px;
+    width:180px;
 
 }
 
@@ -31,6 +31,8 @@ div .second-row-row img{
 
 .images2 {
     float:right;
+	height:210px;
+    width:245px;
     margin-right:13px;
 	padding-right:20px;
 	padding-left:25px;
@@ -43,6 +45,12 @@ div .second-row-row img{
 
 
 .first-row {
+	margin:0 auto;
+	width:50%;
+	padding-top:3em;	
+}
+
+second-row {
 	margin:0 auto;
 	width:50%;
 	padding-top:3em;	
