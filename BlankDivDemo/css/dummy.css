@@ -3,22 +3,18 @@
 div.main {
   border:6px solid black;
 }
-body {
-	direction:rtl;
-}
-header {
-  
-  border:5px solid blue;
-  background-color: #909090;
-}
+
 nav {
 	  border:3px dotted orange;
 }
-div.footer {
+footer {
   
   border:5px solid blue;
 }
 
+.footer-content {
+	border:3px dashed orange;
+}
 div.main-section {
   border:5px solid red;
 }
