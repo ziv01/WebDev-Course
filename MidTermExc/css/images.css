@@ -13,6 +13,7 @@ div .second-row-row img{
 .images2 .left-img {
 	padding-right:180px;
 	
+	
 }
 
 .images2 .middle-img {
@@ -26,6 +27,8 @@ div .second-row-row img{
 .images1 {
     float:right;
     margin-right:13px;
+	
+
 }
 
 .images2 {
@@ -36,6 +39,8 @@ div .second-row-row img{
 	padding-top:20px;
 	padding-bottom:20px;
 	background-color:#e8ebed;
+	border:1px solid #e8ebed;
+	border-bottom-right-radius:2em;
 }
 
 
@@ -50,7 +55,7 @@ div .second-row-row img{
 	margin:0 auto;
 	width:50%;
 	padding-top:4em;
-	padding-bottom:9em;
+	padding-bottom:7em;
 }
 
 .first-row::after {

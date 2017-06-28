@@ -88,3 +88,16 @@ footer div  ul li a {
 footer div ul li:first-child a {
 	border-right:none;
 }
+
+ul li a .logo {
+position:absolute;
+float:right;
+
+}
+
+.logo::after {
+    content: "";
+    clear: both;
+    display: table;
+
+} 
