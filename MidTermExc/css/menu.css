@@ -5,13 +5,14 @@
 
 nav ul {
   list-style-type: none;
-  margin-right:450px; 
+  margin-right:450px;
+  padding-top:25px;
+
 }
 
 nav ul li {
   float: right;
   background-color: #909090;
-
 }
 
 nav ul li a {
@@ -63,7 +64,8 @@ a:hover {
 
 footer div ul {
   list-style-type: none;
-  margin-right:275px;   
+  margin-right:280px;
+  padding-top:10px;
  
 
 }
