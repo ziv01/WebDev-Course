@@ -1,0 +1,11 @@
+/* main stylesheet file Styles go here main.css */
+
+/* forming main style */
+
+body {
+	direction:rtl;
+	text-align:right;
+	font-family:Arial;
+	box-sizing:border-box;
+}
+
