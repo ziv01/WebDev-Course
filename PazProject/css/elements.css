@@ -1,28 +1,28 @@
 /* this elements.css stylesheet file is handelling all main section elements */
 
-img {
-	width:350px;
-	height:290px;
-}
 
 .first-row {
 	width:75%;
 	margin:5px auto;
 	
 }
-
+.first-row p, h5 {
+	color:white;
+	margin-right:10px;
+}
 
 .first-right {
 	float:right;
 	width:33.3%;
 	background-image: url("../images/1908364606615453350.jpg");
-    background-size: 350px 290px;
+    background-size: 290px 350px;
     background-repeat: no-repeat;
+	background-size: cover;
 	border:1px solid;
 	border-bottom-right-radius: 2em;
-	padding-top:8em;
-	padding-left:5px;
-	
+	padding-top:11em;
+	padding-left:10px;
+
 }
 
  
@@ -30,24 +30,73 @@ img {
 	float:right;
 	width:33.3%;
 	background-image: url("../images/Picture-046410251500.jpg");
-	background-size: 350px 290px;
+	background-size: 290px 350px;
     background-repeat: no-repeat;
+	background-size: cover;
 	border:1px solid;
 	border-bottom-right-radius: 2em;
-	padding-top:9em;
+	padding-top:11.5em;
+	padding-left:30px;
+	padding-right:20px;
 }
 
 .first-left {
+		float:right;
+		width:32%;
 		background-image: url("../images/פזקר_-291_354410564000.jpg");
-		background-size: 350px 290px;
-		background-repeat: no-repeat;		
-		border:1px solid;
-		border-bottom-right-radius: 2em;
-		padding-top:9em;
+		background-repeat: no-repeat;	
+		background-size: 290px 350px;
+		background-size: cover;		
+		border:1px solid;		
+	    border-bottom-right-radius: 2em;		
+		padding-top:11.5em;	
+		padding-left:30px;	
+	    padding-right:20px;		
+
 }
 .first-row:after {
     content: "";
     clear: both;
     display: table;
 }
+
+.text-first-right {
+	margin:20px;
+}
+.text-first-right p {
+    text-align:right;
+	font-size:13px;
+}
+
+.readMore {
+    font-size: 13px;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+	color:white;
+	float:left;
+}
+
+.text-first-right {
+		border:1px solid none;
+		border-bottom-right-radius:2em;
+		background-color:rgba(97, 104, 94, 0.7)
+		
+}
+
+.text-first-center {
+		border:1px solid none;
+		border-bottom-right-radius:2em;
+		background-color:rgba(97, 104, 94, 0.7)
+		
+}
+
+.text-first-left {
+		border:1px solid none;
+		border-bottom-right-radius:2em;
+		background-color:rgba(97, 104, 94, 0.7)
+		
+}
+
 
