@@ -1,0 +1,24 @@
+/* main stylesheet file Styles go here main.css */
+
+/* forming main style */
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+	direction:rtl;
+	text-align:right;
+	font-family:Arial;
+}
+
+header {
+  
+  border:5px solid blue;
+  background-color: #909090;
+}
+
+footer {
+	  background-color: #909090;
+}
+

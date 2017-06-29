@@ -1,0 +1,53 @@
+/* this elements.css stylesheet file is handelling all main section elements */
+
+img {
+	width:350px;
+	height:290px;
+}
+
+.first-row {
+	width:75%;
+	margin:5px auto;
+	
+}
+
+
+.first-right {
+	float:right;
+	width:33.3%;
+	background-image: url("../images/1908364606615453350.jpg");
+    background-size: 350px 290px;
+    background-repeat: no-repeat;
+	border:1px solid;
+	border-bottom-right-radius: 2em;
+	padding-top:8em;
+	padding-left:5px;
+	
+}
+
+ 
+.first-center {
+	float:right;
+	width:33.3%;
+	background-image: url("../images/Picture-046410251500.jpg");
+	background-size: 350px 290px;
+    background-repeat: no-repeat;
+	border:1px solid;
+	border-bottom-right-radius: 2em;
+	padding-top:9em;
+}
+
+.first-left {
+		background-image: url("../images/פזקר_-291_354410564000.jpg");
+		background-size: 350px 290px;
+		background-repeat: no-repeat;		
+		border:1px solid;
+		border-bottom-right-radius: 2em;
+		padding-top:9em;
+}
+.first-row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+

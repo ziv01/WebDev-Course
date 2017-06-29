@@ -1,0 +1,51 @@
+/* dummy stylesheet file to outline elenents borders dummy.css */
+
+div.main {
+  border:6px solid black;
+}
+
+nav {
+	  border:3px dotted orange;
+}
+footer {
+  
+  border:5px solid blue;
+}
+
+.footer-content {
+	border:3px dotted orange;
+}
+div.main-section {
+  border:5px solid red;
+}
+
+div.first-row {
+  border:3px solid green;
+}
+
+
+div.first-right {
+  border:2px dashed yellow;
+}
+
+div.first-center {
+  border:2px dashed yellow;
+}
+div.first-left {
+  border:2px dashed yellow;
+}
+
+div.second-row {
+  border:3px solid darkgreen;
+}
+
+div.second-right {
+  border:2px dashed yellow;
+}
+
+div.second-center {
+  border:2px dashed yellow;
+}
+div.second-left {
+  border:2px dashed yellow;
+}
