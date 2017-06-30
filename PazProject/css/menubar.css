@@ -93,3 +93,14 @@ footer div ul li a {
  footer div ul li:first-child a {
 	border-right:none;
 }
+
+
+/* adding home image to the footer mennu */
+
+. 
+.home-menu {
+	z-index:1;
+	width:1em;
+	height:1em;
+}
+
