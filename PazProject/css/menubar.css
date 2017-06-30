@@ -1,5 +1,6 @@
 /* This stylesheet file (menubar.css) contains all menubar related styling */
 
+/* handelling the header main menu styling */
 nav {
 	width:60%;
 	margin:0 auto;
@@ -31,6 +32,7 @@ nav ul li a {
 	border-right:none;
 }
 
+/* This is the dropdown section for the menus */
 .dropdown {
   position: relative;
 }
@@ -50,6 +52,8 @@ nav ul li a {
     color: white;
 }
 
+/* handelling a state of hover over a sub menu  and over a link*/
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -62,7 +66,7 @@ a:hover {
   background-color: #adafb2;
 }
 
-
+/* handelling the footer menu section */
 footer div {
 	width:85%;
 	margin:0 auto;
@@ -94,8 +98,9 @@ footer div ul li a {
 }
 
 
-/* adding home image to the footer mennu */
+/* adding indevidual images to the header and footer sectons */
 
+/* handelling the paz logo and it's position */
 
 .paz-logo {
 	z-index:100;
@@ -104,16 +109,19 @@ footer div ul li a {
 	right:190px;
 }
 
+/* handelling the home icon near the paz logo */
 .header-home {
 	position:absolute;
 	
 }
 
+/* handelling the facebook icon in the footer right side */
 .fb-icon {
 	postion:absolute;
 	float:right;
 }
-	
+
+/* handelling the search box location */	
 .search-box {
 		position:absolute;
 		left:300px;
@@ -121,12 +129,14 @@ footer div ul li a {
 			
 }
 
+/* handelling the search button location */
 .search-icon {
 		position:absolute;
 		left:280px;
 		top:30px;
 }
 
+/* handelling the link to the English version of this site */
 .english {
 		position:absolute;
 		left:450px;

@@ -2,6 +2,13 @@
 <html>
 
 <head>
+<!--* There are four seperate css files for each part of the page:
+		1. main.css handle onl general attributes and elements such as body, header and footer.
+		2. menubar.css handle with menus only. All menu related styling methods are handled by this file 
+		3. elemenets.css handle all the different elements in the main page section, such as articles, images, paragraphs etc.
+		4. the dummy.css is simply a metodical tool to visuallize the borders of each block in the page. it isn't necessary for the page to run.
+-->
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/menubar.css"> 
   <link rel="stylesheet" href="css/elements.css"> 
@@ -11,6 +18,14 @@
 <body>
 
   <div class="main">
+  <!-- The header section is constructed of a few elements:
+		1. The header tag itself to hold all other elements.
+		2. The nav tag to hold all menu related elements.
+		3. the list elements that create the dropdown list itself.
+		NOTE: so of the images such as the PAZ logo are handled by the menubar.css as well.
+		
+-->
+		
 	<header>
 		<a class="english" href="#">English</a>
 		<img class="search-icon" src="images/search_button.png" alt="search-icon">
@@ -88,6 +103,19 @@
 			</ul>		
 		</nav>
 		</header>
+<!-- 
+		The main page section handles all the information of this site.
+		 1. there are two main blocks in the main section:
+			1.1 first row with three columns 
+			1.2 second row with three columns
+		 2. The elements.css files handles all the main elemenets styling.
+		 3. Elements:
+		    3.1 class "first-row" is the first row block.
+			3.2 class "first-right" is the first column to the right in the first row.
+			3.3 class "first-right" is the second column to the right in the first row.
+			3.4 class "first-right" is the third column to the left in the first row.
+		SAME GOES TO THE SECOND ROW RESPECTIVLY
+-->		
     <div class="main-section">
        <div class="first-row">
 		 <div class="first-right">
@@ -134,6 +162,12 @@
 				<br><br>				
 			</div>
 		</div>
+<!-- This is the footer section. It consists of a few elements:
+			1. the footer block.
+			2. the nav/div vlock
+			3. horizontal list.
+			
+-->			
         <div class="second-left">
  			<div class="text-second-left">
 				<h5>התחנות שלנו בדרך שלך</h5>
