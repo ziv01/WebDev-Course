@@ -114,4 +114,27 @@ footer div ul li a {
 	float:right;
 }
 	
+.search-box {
+		position:absolute;
+		left:300px;
+		top:30px;
+			
+}
+
+.search-icon {
+		position:absolute;
+		left:280px;
+		top:30px;
+}
+
+.english {
+		position:absolute;
+		left:450px;
+		top:30px;
+		font-weight:bold;
+		font-size:13px;
+		color:white;
+}
+
+
 
