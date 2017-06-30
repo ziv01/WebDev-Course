@@ -225,7 +225,7 @@
 	
 }
 
-/* setting the lints to the statings to be a column and not line using display:block;
+/* setting the lints to the statings to be a column and not line using display:block; */
 .stations {
 	display:block;
     font-size: 13px;
