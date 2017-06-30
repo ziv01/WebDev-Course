@@ -3,6 +3,7 @@
 nav {
 	width:60%;
 	margin:0 auto;
+	margin-right:325px;
 
 }
 nav ul {
@@ -65,9 +66,7 @@ a:hover {
 footer div {
 	width:85%;
 	margin:0 auto;
-	padding-right:100px;
-
-
+	margin-right:150px;
 }
 footer div ul {
   list-style-type: none;
@@ -97,10 +96,22 @@ footer div ul li a {
 
 /* adding home image to the footer mennu */
 
-. 
-.home-menu {
-	z-index:1;
-	width:1em;
-	height:1em;
+
+.paz-logo {
+	z-index:100;
+	position:absolute;
+	top:30px;
+	right:190px;
 }
+
+.header-home {
+	position:absolute;
+	
+}
+
+.fb-icon {
+	postion:absolute;
+	float:right;
+}
+	
 
