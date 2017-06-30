@@ -16,10 +16,13 @@ header {
   
   border:5px solid blue;
   background-color: #909090;
+  padding-top:4.5em;
 }
+
 
 footer {
 	  background-color: #909090;
+	  padding-top:0.5em;
 }
 
 p{
