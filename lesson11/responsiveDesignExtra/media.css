@@ -22,7 +22,11 @@
   .menu.responsive a {
     float: none;
     display: block;
-    text-align: right;
+    text-align: left;
   }
-
+	.menu .responsive {
+		clear:left;
+		float:none;
+		text-align:left;
+	}
 }
