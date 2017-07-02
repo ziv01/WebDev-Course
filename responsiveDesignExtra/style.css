@@ -1,0 +1,47 @@
+/* style.css stylesheet file */
+
+* {
+  box-sizing:border-box;
+}
+header nav {
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom:10px;
+}
+
+.logo {
+   float:left;
+   color:white;
+   text-decoration:none;
+   padding-top:1em;
+}
+
+.logo a:hover {
+  background-color: #ddd;
+  color: black;
+}  
+
+.menu {
+  float:right;
+  padding:1em;
+ }
+
+.menu a {
+	color:white;
+	text-decoration:none;
+	padding:15px;
+}
+ .menu a:hover {
+  background-color: #ddd;
+  color: black;
+}  
+
+.menu .icon {
+  display: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
