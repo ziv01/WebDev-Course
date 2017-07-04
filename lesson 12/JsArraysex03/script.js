@@ -67,7 +67,7 @@ var record6 = {
 }
 
 
-studentrsArray = [record1,record2,record3,record4,record5,record6]
+var studentrsArray = [record1,record2,record3,record4,record5,record6]
 console.log(studentrsArray);
 
 studentrsArray.shift();
