@@ -98,8 +98,21 @@ var faceObject = {
       eyes :"",
 }
 
+// Replace first element in the array with attribute face instead of eyeColor.
+
+var instructure = {
+    instructureName : "Nir",
+    instructureHeight : 173,
+    face : "brown"
+
+}
+
+studentrsArray[0] = instructure;
+
+console.log(instructure);
+
 faceObject.eyes = eyesObject;
-studentrsArray[0].eyeColor = faceObject;
+studentrsArray[0].face = faceObject;
 
 console.log(studentrsArray[0]);
 
