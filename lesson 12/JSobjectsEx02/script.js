@@ -6,19 +6,19 @@
 var person = {
   Name : "Ziv Knobler",
   Height : 173,
-  EyeColor : "brown"
+  eyeColor : "brown"
 };
 
-person.EyeColor = "blue";
+person.eyeColor = "blue";
 console.log(person);
 
 
-var locations = {
-    IsIsrael : true,
+var country = {
+    isIsrael : true,
     city : "beith-dagan"
   };
   
-person.location = locations;
+person.location = country;
 console.log(person.location);
 
 
