@@ -5,6 +5,12 @@
 * Lesson 7 - CSS Menu layout.
 * Lesson 8 - CSS Fonts and text layout attributes.
 * Lesson 9 - Forms.
+* Lesson 10 - Learning to use GitHub.
+* Lesson 11 - Responsive CSS.
+* Lesson 12 - JS variables.
+* Lesson 13 - Testing Variables
+* Lesson 14 - Learning Loops.
+* Lesson 15 JS Functions.
 
 # Personal Web Page
 * wizardwizw000webhostsapp
