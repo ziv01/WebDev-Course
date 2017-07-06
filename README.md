@@ -10,7 +10,7 @@
 * Lesson 12 - JS variables.
 * Lesson 13 - Testing Variables
 * Lesson 14 - Learning Loops.
-* Lesson 15 JS Functions.
+* Lesson 15 - JS Functions.
 
 # Personal Web Page
 * wizardwizw000webhostsapp
