@@ -11,3 +11,6 @@ if (num1 > num2) {
   //echo number2 is bigger than number1
   console.log("number2 is the bigger one! ");
 }
+
+
+
