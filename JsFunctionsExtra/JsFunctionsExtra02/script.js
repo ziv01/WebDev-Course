@@ -25,9 +25,9 @@ function checkString(str){
     }
   }
   if (isPolinom) {
-      alert("The string is a poligon!");
+      alert("The string is a palindrome!");
   } else {
-    alert("The string isn't a poligon!!");
+    alert("The string isn't a palindrome!!");
   }
   
   }
