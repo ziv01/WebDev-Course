@@ -12,7 +12,7 @@ if(num1>=num2) {
      console.log("the biggest number is: " +num1);
 }  else
 {
-    console.log("the biggest number is: " +num2);
+    alert("the biggest number is: " +num2);
 }
 
 }
