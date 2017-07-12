@@ -1,5 +1,15 @@
+/* adding and deleting rows to tables */
 http://jsfiddle.net/mido_rizk007/FBDb9/1/
 https://www.w3schools.com/jsref/met_table_deleterow.asp
 http://www.webdeveloper.com/forum/showthread.php?63552-URGENT-Deleting-table-rows-with-selected-checkboxes
 http://bytutorial.com/blogs/javascript/add-and-delete-table-row-in-javascript
 http://viralpatel.net/blogs/dynamically-add-remove-rows-in-html-table-using-javascript/
+
+/* creating tables */
+http://www.tablesgenerator.com/html_tables
+http://www.tabulizer.com/index.php/component/rulesetwizard/?Itemid=189
+
+
+/* Templates of tables */
+https://colorlib.com/wp/css3-table-templates/
+https://www.freshdesignweb.com/free-css-tables/
