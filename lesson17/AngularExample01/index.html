@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='passportApp'>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="passportApp.js"></script>
+	</head>
+	<body ng-controller="PassportListCtrl">
+	<input ng-model="query">:חיפוש
+	<ul>
+		<li ng-repeat="passport in passports | filter:query">
+			<span>{{passport.num}}</span>
+			<p>{{passport.owner}}</p>
+		</li>
+	</ul>
+
+	</body>
+
+</html>

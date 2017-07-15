@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>טופס פרטי לקוחות</title>
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <main>
+	<table id="myTable">
+  <tr>
+    <td>Row1 cell1</td>
+    <td>Row1 cell2</td>
+  </tr>
+  <tr>
+    <td>Row2 cell1</td>
+    <td>Row2 cell2</td>
+  </tr>
+  <tr>
+    <td>Row3 cell1</td>
+    <td>Row3 cell2</td>
+  </tr>
+</table>
+  </main>
+  <div class="form-style-10">
+    <h1>פרטי לקוח<span>טופס קליטת פרטי לקוח חדש</span></h1>
+    <form>
+      <div class="section"><span>1</span>פרטי לקוח</div>
+      <div class="inner-wrap">
+        <label> שם מלא
+          <input type="text" name="fullName" value="יוסי נגר" placeholder="שם הלקוח" />
+        </label>
+        <label> כתובת
+           <input type="text" name="address" value="השרון 44 בית עריף מיקוד 33212" placeholder="כתובת הלקוח"/>
+        </label>
+      </div>
+
+      <div class="section"><span>2</span>פרטי קשר</div>
+      <div class="inner-wrap">
+        <label> כתובת דואר אלקטרוני
+          <input type="email" value="yossi@blah.com" name="email" placeholder="@" />
+        </label>
+        <label> טלפון
+          <input type="text" value="03-9876654" name="phone" placeholder="טלפון" />
+        </label>
+        <label> טלפון סלולרי
+          <input type="text" value="054-7766112" name="mobile" placeholder="סלולרי" />
+        </label>
+
+      </div>
+
+      <div class="section"><span>3</span>פרטי חברה</div>
+      <div class="inner-wrap">
+        <label> שם החברה
+          <input type="text" value="יוסי בעמ" name="company" placeholder="שם החברה" />
+        </label>
+        <label> מספר ח-פ
+          <input type="text" value="511111111" name="compnayID" placeholder="מספר ח-פ" />
+        </label>
+      </div>
+      <div class="button-section">
+        <input type="button" onclick="addNewRecord(this.form)" name="update" value="עדכן" />
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

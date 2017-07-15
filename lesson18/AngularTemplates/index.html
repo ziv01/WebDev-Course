@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="actors.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body ng-app="actorsApp">
+  <h1>מסך הבית של השחקנים</h1>
+
+  <div ng-controller="ActorsGalleryCtrl">
+    <div class="gallery-item clearfix" ng-repeat="actor in actors">
+      <a href="{{actor.infoURL}}" target="_blank"><img ng-src={{actor.photoURL}}> </a>
+      <span>{{actor.actorName}}</span>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <nav>
+    <ul>
+      <li>שחקנים</li>
+      <li>המובילים</li>
+      <li>חיפוש</li>
+    </ul>
+  </nav>
+</body>
+
+</html>
