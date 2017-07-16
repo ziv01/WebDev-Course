@@ -17,4 +17,16 @@ catsApp.controller('ActorsGalleryCtrl', function($scope){
     new actor("דנזל","וושיגטון","https://images-na.ssl-images-amazon.com/images/M/MV5BMjE5NDU2Mzc3MV5BMl5BanBnXkFtZTcwNjAwNTE5OQ@@._V1_SY1000_SX750_AL_.jpg","http://www.imdb.com/name/nm0000243/?ref_=nv_sr_1")
     ];
 	$scope.sortArg = "";
+	
+	    $scope.setImgBorder = function(event) {
+        var currentClass = "gallery-item clearfix";
+        console.log();
+        if (event.currentTarget.className === currentClass) {
+          event.currentTarget.className += " setBorder ";
+          console.log(event.currentTarget.className);
+        }
+        else {
+          event.currentTarget.className = currentClass;
+        }
+    };
 });

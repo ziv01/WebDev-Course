@@ -5,6 +5,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="actors.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menubar.css">
   <!-- <script src="script.js"></script> -->
 </head>
 
@@ -20,20 +21,21 @@
 		</select>
 
 	</form>
-    <div class="gallery-item clearfix" ng-repeat="actor in actors | filter:searchActor | orderBy:sortArg">
-      <img ng-src={{actor.photoURL}}><br>
+    <div class="gallery-item clearfix" ng-click="setImgBorder($event)" ng-repeat="actor in actors | filter:searchActor | orderBy:sortArg">
+      <img ng-src="{{actor.photoURL}}"><br>
       <a ng-href="{{actor.infoURL}}" target="_blank"><span>{{actor.firstName}} {{actor.lastName}}</span></a>
     </div>
   <br>
   <br>
-  <br>
-  <nav>
-    <ul>
-      <li>שחקנים</li>
-      <li>המובילים</li>
-      <li>חיפוש</li>
-    </ul>
-  </nav>
+    <footer> 
+    <div class="footer-content">
+        <ul>
+          <li><a href="#">שחקנים</a>
+            <li><a href="#">מובילים</a></li>
+            <li><a href="#">חיפוש</a></li>
+        </ul>
+      </div>
+    </footer>
 </body>
 
 </html>

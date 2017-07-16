@@ -3,6 +3,15 @@
 body {
   direction:rtl;
   text-align:right;
+  background-image: url("http://cdn.wallpapersafari.com/50/77/ZPfjFT.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+footer {
+	  background-color: #909090;
+	  position:absolute;
+	  bottom:0;
+	  width:90%;
 }
 
 
@@ -20,6 +29,9 @@ body {
   height: 100%;
 }
 
+a {
+  color:red;
+}
 
 .gallery-item:hover {
     border-style: inset;
@@ -28,7 +40,12 @@ body {
 .clearfix::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
+}
+
+.setBorder {
+  border:3px solid red;
+  border-style: inset;
 }
 
 nav {
