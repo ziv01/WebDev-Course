@@ -20,7 +20,7 @@ catsApp.controller('ActorsGalleryCtrl', function($scope){
 	$scope.sortArg = "";
 	
 	    $scope.setImgBorder = function(event) {
-        var currentClass = "gallery-item clearfix";
+        var currentClass = "gallery-item clearfix ng-scope";
         console.log();
         if (event.currentTarget.className === currentClass) {
           event.currentTarget.className += " setBorder ";
