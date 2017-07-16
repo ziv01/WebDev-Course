@@ -11,7 +11,7 @@
  <body ng-app="actorsApp" ng-controller="ActorsGalleryCtrl">
   <h1>מסך הבית של השחקנים</h1>
 	<form>
-		חיפוש: <input type="text" name="search" id="search" placeholder="search actor" ng-model="searchActor"/> 
+		חיפוש: <input type="text" name="search" id="search" placeholder="חיפוש שחקן" ng-model="searchActor"/> 
 		מיון: 
 		<select ng-model="sortArg">
 		  <option value="">ללא מיון</option>
@@ -20,7 +20,7 @@
 		</select>
 
 	</form>
-    <div class="gallery-item clearfix" ng-repeat="actor in actors | filter:searchActor | orderBy:sortArg.fullName">
+    <div class="gallery-item clearfix" ng-repeat="actor in actors | filter:searchActor | orderBy:sortArg">
       <a href="{{actor.infoURL}}" target="_blank"><img ng-src={{actor.photoURL}}><br></a>
       <span>{{actor.firstName}} {{actor.lastName}}</span>
     </div>
