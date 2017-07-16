@@ -5,21 +5,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="actors.js"></script>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
 </head>
 
-<body ng-app="actorsApp">
- <body ng-app="actorsApp">
+ <body ng-app="actorsApp" ng-controller="ActorsGalleryCtrl">
   <h1>מסך הבית של השחקנים</h1>
 	<form>
-		<input type="text" name="search" id="search" placeholder="search actor" ng-model="searchActor" />
+		חיפוש: <input type="text" name="search" id="search" placeholder="search actor" ng-model="searchActor"/> 
+		מיון: 
+		<select ng-model="sortArg">
+		  <option value="">ללא מיון</option>
+		  <option value="firstName">שם פרטי</option>
+		  <option value="lastName">שם משפחה</option>
+		</select>
+
 	</form>
-  <div ng-controller="ActorsGalleryCtrl">
-    <div class="gallery-item clearfix" ng-repeat="actor in actors | filter:searchActor">
-      <a href="{{actor.infoURL}}" target="_blank"><img ng-src={{actor.photoURL}}> </a>
-      <span>{{actor.actorName}}</span>
+    <div class="gallery-item clearfix" ng-repeat="actor in actors | filter:searchActor | orderBy:sortArg.fullName">
+      <a href="{{actor.infoURL}}" target="_blank"><img ng-src={{actor.photoURL}}><br></a>
+      <span>{{actor.firstName}} {{actor.lastName}}</span>
     </div>
-  </div>
   <br>
   <br>
   <br>
