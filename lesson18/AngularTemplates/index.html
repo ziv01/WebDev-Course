@@ -9,10 +9,13 @@
 </head>
 
 <body ng-app="actorsApp">
+ <body ng-app="actorsApp">
   <h1>מסך הבית של השחקנים</h1>
-
+	<form>
+		<input type="text" name="search" id="search" placeholder="search actor" ng-model="searchActor" />
+	</form>
   <div ng-controller="ActorsGalleryCtrl">
-    <div class="gallery-item clearfix" ng-repeat="actor in actors">
+    <div class="gallery-item clearfix" ng-repeat="actor in actors | filter:searchActor">
       <a href="{{actor.infoURL}}" target="_blank"><img ng-src={{actor.photoURL}}> </a>
       <span>{{actor.actorName}}</span>
     </div>
