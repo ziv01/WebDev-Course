@@ -3,3 +3,15 @@
 body {
 	direction:rtl;
 }
+
+#gradHeader {
+    height: 100%;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#4fc65f, #d7f7d7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4fc65f, #d7f7d7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4fc65f, #d7f7d7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4fc65f, #d7f7d7); /* Standard syntax (must be last) */
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    color:#f2f2f2;
+}
