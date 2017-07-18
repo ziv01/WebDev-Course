@@ -1,6 +1,6 @@
 var catsApp = angular.module('actorsApp', []);
 
-catsApp.controller('ActorsGalleryCtrl', function($scope){
+catsApp.controller('ActorsGalleryCtrl', function($scope, $http){
   function actor(firstName,lastName,photoURL,infoURL) {
     this.firstName = firstName;
     this.lastName = lastName;	
@@ -30,13 +30,11 @@ catsApp.controller('ActorsGalleryCtrl', function($scope){
           event.currentTarget.className = currentClass;
         }
     };
-	/*	
-	$http.get('actors.json').then(function(response) {
-	return $scope.actors = response.data;
-	});
-,
-	error(function(data, status, headers, config) {
-	console.log(“שגיאה");
-	});
-	*/
+	$http.get('actorst.json').then(function(response) {
+		$scope.actors = [];
+		for (var i=0; response.data.length; i++) {
+			$scope.actors.push(new actor(response.data[i]));
+		
+		}
+		});
 });
