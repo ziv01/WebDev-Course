@@ -1,25 +1,43 @@
-<!--
-    you can substitue the span of reauth email for a input with the email and
-    include the remember me checkbox
-    -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link rel="stylesheet" href="style.css">
+  <!-- Adding awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <script src="script.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <script src="login.js"></script>
+</head>
+
+<body>
+  <h1 id="gradHeader"><i class="fa fa-cubes push-right" aria-hidden="true" style="color:#335ace;"></i>   גרין סי.אר.אם<small>    מערכת ניהול לקוחות</small></h1>
+
     <div class="container">
         <div class="card card-container">
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <img id="profile-img" class="profile-img-card" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" />
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin">
                 <span id="reauth-email" class="reauth-email"></span>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <input type="email" id="inputEmail" class="form-control text-right" placeholder="כתובת דואר אלקטרוני" required autofocus>
+                <input type="password" id="inputPassword" class="form-control text-right" placeholder="סיסמה" required>
                 <div id="remember" class="checkbox">
                     <label>
-                        <input type="checkbox" value="remember-me"> Remember me
+                        <span  class="text-center"><input type="checkbox" value="remember-me">&nbsp;&nbsp;&nbsp;&nbsp;זכור אותי</span>
                     </label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">התחבר</button>
             </form><!-- /form -->
             <a href="#" class="forgot-password">
-                Forgot the password?
+                שכחת סיסמה?
             </a>
         </div><!-- /card-container -->
     </div><!-- /container -->
+</body>
+
+</html>
