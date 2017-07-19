@@ -1,57 +1,62 @@
 /* Styles go here */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: sans-serif;
   direction:rtl;
   text-align:right;
   background-image: url("http://cdn.wallpapersafari.com/50/77/ZPfjFT.jpg");
   background-repeat: no-repeat;
   background-size: cover;  
 }
-footer {
-	  background-color: #909090;
-	  position:absolute;
-	  bottom:0;
-	  width:90%;
+
+#search {
+  /*display: inline;*/
 }
 
-
-.gallery-item {
-  width: 200px;
-  height: 200px;
+.actor-item {
   float: right;
-  margin: 15px;
-  border: 3px outset #ccc;
+  width: 25%;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #aaa;
 }
 
-
-.gallery-item img{
-  width: 100%;
-  height: 100%;
+.actor-item img {
+  max-width: 100%;
+  margin: 0 auto;
+  height:600px;
+  display: block;
 }
 
-a {
-  color:red;
+.actor-item p {
+  text-align: center;
 }
 
-.gallery-item:hover {
-    border-style: inset;
- }
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
+@media only screen and (max-width: 500px) {
+  .actor-item {
+    width: 100%;
+  }
 }
 
-.setBorder {
-  border:3px solid red;
-  border-style: inset;
+.img-selected {
+  border: 3px solid red;
 }
 
-nav {
-  position:absolute;
-  clear:right;
-  bottom:100px;
+movie div {
+  box-shadow: 5px 5px 5px #aaa;
+  background-color: #eee;
+  padding: 5px 0px;
+  margin: 10px 0px;
 }
 
+movie div h3{
+  margin-top: 0px;
+}
 
+.length {
+  color: #555;
+  font-size: 80%;
+}

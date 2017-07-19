@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -10,13 +11,13 @@
 
 <body ng-app="movieApp">
   <article ng-controller="ActorCtrl">
-    <h1>Actors</h1>
+    <h1>גלריית שחקנים</h1>
     <form>
-      <input type="text" name="search" id="search" placeholder="Filter" ng-model="filterActor" /> Sort By:
+      <input type="text" name="search" id="search" placeholder="Filter" ng-model="filterActor" /> מיון לפי:
       <select ng-model="orderProp">
-        <option value="">None</option>
-        <option value="firstName">First Name</option>
-        <option value="lastName">Last Name</option>
+        <option value="">ללא מיון</option>
+        <option value="firstName">שם פרטי</option>
+        <option value="lastName">שם משפחה</option>
       </select>
     </form>
 
@@ -27,11 +28,12 @@
   </article>
   <article ng-controller="TopTenCtrl">
     <hr>
-    <h1>Top 10 Movies</h1>
+
+    <h1>עשרת הגדולים</h1>
     <input type="text" name="search" id="search" placeholder="Filter" ng-model="filterMovie.name" /> Sort By:
     <select ng-model="orderProp">
-      <option value="">None</option>
-      <option value="length">Length</option>
+      <option value="">ללא מיון</option>
+      <option value="length">אורך הסרט</option>
     </select>
     <movie ng-repeat="movie in movies | filter:filterMovie | orderBy:orderProp"></movie>
   </article>

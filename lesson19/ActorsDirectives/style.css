@@ -6,6 +6,11 @@
 
 body {
   font-family: sans-serif;
+  direction:rtl;
+  text-align:right;
+  background-image: url("http://cdn.wallpapersafari.com/50/77/ZPfjFT.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;  
 }
 
 #search {
@@ -13,20 +18,22 @@ body {
 }
 
 .actor-item {
-  float: left;
-  width: 33.3%;
+  float: right;
+  width: 25%;
   padding: 5px;
-  box-shadow: 5px 5px 5px #aaa;
 }
 
 .actor-item img {
   max-width: 100%;
   margin: 0 auto;
+  height:500px;
   display: block;
 }
 
 .actor-item p {
   text-align: center;
+  color:yellow;  
+  font-weight:bold;
 }
 
 @media only screen and (max-width: 500px) {
@@ -40,17 +47,18 @@ body {
 }
 
 movie div {
-  box-shadow: 5px 5px 5px #aaa;
-  background-color: #eee;
-  padding: 5px 0px;
-  margin: 10px 0px;
+  color:white;
 }
 
 movie div h3{
   margin-top: 0px;
+
+}
+h1 {
+  color:white;	
 }
 
 .length {
-  color: #555;
+  color: blue;
   font-size: 80%;
 }

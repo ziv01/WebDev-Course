@@ -2,40 +2,43 @@
 <html>
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <script src="actors.js"></script>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="menubar.css">
-  <!-- <script src="script.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app.js"></script>
 </head>
 
- <body ng-app="actorsApp" ng-controller="ActorsGalleryCtrl">
-  <h1>מסך הבית של השחקנים</h1>
-	<form>
-		חיפוש: <input type="text" name="search" id="search" placeholder="חיפוש שחקן" ng-model="searchActor"/> 
-		מיון: 
-		<select ng-model="sortArg">
-		  <option value="">ללא מיון</option>
-		  <option value="firstName">שם פרטי</option>
-		  <option value="lastName">שם משפחה</option>
-		</select>
+<body ng-app="movieApp">
+  <article ng-controller="ActorCtrl">
+    <h1>גלריית שחקנים</h1>
+    <form>
+      <input type="text" name="search" id="search" placeholder="Filter" ng-model="filterActor" /> מיון לפי:
+      <select ng-model="orderProp">
+        <option value="">ללא מיון</option>
+        <option value="firstName">שם פרטי</option>
+        <option value="lastName">שם משפחה</option>
+      </select>
+    </form>
 
-	</form>
-    <div class="gallery-item clearfix" ng-click="setImgBorder($event)" ng-repeat="actor in actors | filter:searchActor | orderBy:sortArg">
-      <img ng-src="{{actor.photoURL}}"><br>
-      <a ng-href="{{actor.infoURL}}" target="_blank"><span>{{actor.firstName}} {{actor.lastName}}</span></a>
+    <div class="actor-item" ng-repeat="actor in actors | filter:filterActor | orderBy:orderProp">
+      <img ng-class="{'img-selected': actor.isSelected}" class="galleryImg" ng-src={{actor.image}} ng-click="imgClick(actor)" alt="" />
+      <p>{{actor.fullName()}}</p>
     </div>
-  <br>
-  <br>
-    <footer> 
-    <div class="footer-content">
-        <ul>
-          <li><a href="#">שחקנים</a>
-            <li><a href="#">מובילים</a></li>
-            <li><a href="#">חיפוש</a></li>
-        </ul>
-      </div>
-    </footer>
+  </article>
+  <article ng-controller="TopTenCtrl">
+    <hr>
+	<!--
+    <h1>Top 10 Movies</h1>
+    <input type="text" name="search" id="search" placeholder="Filter" ng-model="filterMovie.name" /> Sort By:
+    <select ng-model="orderProp">
+      <option value="">None</option>
+      <option value="length">Length</option>
+    </select>
+    <movie ng-repeat="movie in movies | filter:filterMovie | orderBy:orderProp"></movie>
+  </article>
+  
+-->
 </body>
 
 </html>

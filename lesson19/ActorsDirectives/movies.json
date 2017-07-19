@@ -1,26 +1,27 @@
 [
   {
-    "name":"Top Gun",
+    "name":"טופ גאן",
     "length": "150",
-    "director": "Tony Scott",
-    "actors": ["Tom Cruise", "Tim Robbins"]
+    "director": "טוני סקוט",
+    "actors": ["טום קרוז", "טים רובינס"]
+  },
+   {
+    "name":"אספן העצמות",
+    "length": "132",
+    "director": "פיליפ נויס",
+    "director": "טוני סקוט",
+    "actors": ["דנזל וושינגטון", "אנג'לינה ג'ולי"]
   },
   {
-    "name":"Top Gun",
-    "length": "150",
-    "director": "Tony Scott",
-    "actors": ["Tom Cruise", "Tim Robbins"]
+    "name":"מר וגברת סמית",
+    "length": "112",
+    "director": "דאג לימאן",
+    "actors": ["אנג'לינה ג'ולי", "בראד פיט"]
   },
   {
-    "name":"Top Gun",
-    "length": "150",
-    "director": "Tony Scott",
-    "actors": ["Tom Cruise", "Tim Robbins"]
-  },
-  {
-    "name":"Top Gun",
-    "length": "150",
-    "director": "Tony Scott",
-    "actors": ["Tom Cruise", "Tim Robbins"]
+    "name":"מלחמת העולמות",
+    "length": "123",
+    "director": "מארק פורסטר",
+    "actors": ["בראד פיט", "מיראל אנוס"]
   }
 ]
