@@ -1,0 +1,17 @@
+[
+  {
+    "firstName":"Gal",
+    "lastName":"Gadot",
+    "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjQ1NDMwNTQ1N15BMl5BanBnXkFtZTgwMjYxNDc1ODE@._V1_UY317_CR7,0,214,317_AL_.jpg"
+  },
+  {
+    "firstName":"Brad",
+    "lastName":"Pitt",
+    "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1MjE2MTQ2MV5BMl5BanBnXkFtZTcwMjE5MDY0Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+  },
+  {
+    "firstName":"George",
+    "lastName":"Clooney",
+    "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyMTEyOTQ0MV5BMl5BanBnXkFtZTcwNzU3NTMzNw@@._V1_UY317_CR9,0,214,317_AL_.jpg"
+  }
+]
