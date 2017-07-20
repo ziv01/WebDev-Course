@@ -1,0 +1,23 @@
+[
+  {
+    "firstName":"טום",
+    "lastName":"קרוז",
+    "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTk1MjM3NTU5M15BMl5BanBnXkFtZTcwMTMyMjAyMg@@._V1_.jpg"
+  },
+  {
+    "firstName":"ג'וני",
+    "lastName":"דפ",
+    "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTM0ODU5Nzk2OV5BMl5BanBnXkFtZTcwMzI2ODgyNQ@@._V1_SY1000_CR0,0,701,1000_AL_.jpg"
+  },
+  {
+    "firstName":"בראד",
+    "lastName":"פיט",
+    "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1MjE2MTQ2MV5BMl5BanBnXkFtZTcwMjE5MDY0Nw@@._V1_SY1000_CR0,0,665,1000_AL_.jpg"
+  },
+  {
+    "firstName":"דנזל",
+    "lastName":"וושינגטון",
+    "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE5NDU2Mzc3MV5BMl5BanBnXkFtZTcwNjAwNTE5OQ@@._V1_SY1000_SX750_AL_.jpg"
+  }
+  
+]
