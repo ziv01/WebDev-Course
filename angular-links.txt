@@ -1,0 +1,5 @@
+http://www.jeremyzerr.com/sites/default/files/Getting-Started-with-AngularJS.pdf
+https://web.stanford.edu/class/cs142/cgi-bin/slides/AngularJS.pdf
+https://dncmagazine.blob.core.windows.net/downloads/AngularCheatSheet-DNCMagazine.pdf
+http://sd.blackball.lv/library/AngularJS_in_60_minutes_Dan_Wahlin_May_2013.pdf
+https://brijbhushan.files.wordpress.com/2015/12/angularjs-in-19-days1.pdf
