@@ -10,3 +10,7 @@ http://www.hongkiat.com/blog/free-angular-ebooks/
 https://www.youtube.com/watch?v=M1djOozHEXo
 http://tutlane.com/tutorial/angularjs
 http://www.j2eebrain.com/angularjs-tutorial-for-beginners
+
+
+
+http://campus.codeschool.com/courses/shaping-up-with-angularjs/level/1/section/1/video/1
