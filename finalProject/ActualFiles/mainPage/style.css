@@ -4,7 +4,7 @@ body {
 	direction:rtl;
 }
 
-#gradHeader {
+.gradHeader {
     height: 100%;
     background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#86af49, #b5e7a0); /* For Safari 5.1 to 6.0 */
@@ -14,6 +14,7 @@ body {
     background-repeat:no-repeat;
     background-size: 100% 100%;
     color:#257e94;
+	margin-bottom:0;
 }
 
 .navbar-default {
