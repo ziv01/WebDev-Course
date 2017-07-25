@@ -1,10 +1,10 @@
 [
-  {"name":"Neptune", "distance":30.087},
-  {"name":"Uranus", "distance":19.208},
-  {"name":"Saturn", "distance":9.523}, 
-  {"name":"Jupiter", "distance":5.203}, 
-  {"name":"Mars", "distance":1.524}, 
-  {"name":"Earth", "distance":1.0}, 
-  {"name":"Venus", "distance":0.723}, 
-  {"name":"Mercury", "distance":0.387}    
+  {"fullName":"עמיר פרץ", "address":"האריה 3 רעננה, מיקוד 30343"},
+  {"fullName":"Uranus", "address":19.208},
+  {"fullName":"Saturn", "address":9.523}, 
+  {"fullName":"Jupiter", "address":5.203}, 
+  {"fullName":"Mars", "address":1.524}, 
+  {"fullName":"Earth", "address":1.0}, 
+  {"fullName":"Venus", "address":0.723}, 
+  {"fullName":"Mercury", "address":0.387}    
 ]
