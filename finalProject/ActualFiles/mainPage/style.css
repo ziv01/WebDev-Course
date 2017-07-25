@@ -2,6 +2,7 @@
 
 body {
 	direction:rtl;
+	font-family:Assistant;
 }
 
 .gradHeader {
@@ -15,6 +16,7 @@ body {
     background-size: 100% 100%;
     color:#257e94;
 	margin-bottom:0;
+	
 }
 
 .navbar-default {
