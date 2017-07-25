@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Adding awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+  <title>Angular Table</title>
+</head>
+
+<body  ng-app="crmApp">
+  <div ng-controller="TableCtrl">
+    <table>
+  <tr ng-repeat="x in names">
+    <td ng-if="$odd" style="background-color:#f1f1f1">
+    {{ x.fullName }}</td>
+    <td ng-if="$even">
+    {{ x.fullName }}</td>
+    <td ng-if="$odd" style="background-color:#f1f1f1">
+    {{ x.address }}</td>
+    <td ng-if="$even">
+    {{ x.address }}</td>
+	 <td ng-if="$odd" style="background-color:#f1f1f1">
+    {{ x.email }}</td>
+    <td ng-if="$even">
+    {{ x.email }}</td>
+  </tr>
+</table>
+  </div>
+  <h1>Hello Plunker!</h1>
+</body>
+
+</html>
