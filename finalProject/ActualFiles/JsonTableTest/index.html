@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Adding awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+  <title>Angular Table</title>
+</head>
+
+<body  ng-app="crmApp">
+  <div ng-controller="TableCtrl" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <table class="table table-responsive table-striped table-hover" align="center">
+      <thead>
+        <tr>
+          <th class="text-center">שם לקוח</th>
+          <th class="text-center">כתובת לקוח</th>
+          <th class="text-center">דואר אלקטרוני</th>
+          <th class="text-center">טלפון</th>
+          <th class="text-center">סלולרי</th>
+          <th class="text-center">שם חברה</th>
+          <th class="text-center">מספר ח-פ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="x in names">
+          <td>{{ x.fullname}}</td>
+          <td>{{ x.address}}</td>
+          <td>{{ x.email}}</td>
+          <td>{{ x.phone}}</td>
+          <td>{{ x.mobile}}</td>
+          <td>{{ x.company}}</td>          
+          <td>{{ x.company}}</td>          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

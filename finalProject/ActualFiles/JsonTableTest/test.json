@@ -1,0 +1,10 @@
+[
+  {"fullName":"עמיר פרץ", "address":"האריה 3 רעננה, מיקוד 30343"},
+  {"fullName":"Uranus", "address":19.208},
+  {"fullName":"Saturn", "address":9.523}, 
+  {"fullName":"Jupiter", "address":5.203}, 
+  {"fullName":"Mars", "address":1.524}, 
+  {"fullName":"Earth", "address":1.0}, 
+  {"fullName":"Venus", "address":0.723}, 
+  {"fullName":"Mercury", "address":0.387}    
+]
