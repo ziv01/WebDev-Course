@@ -23,6 +23,7 @@
     <table class="table table-responsive table-striped table-hover" align="center">
       <thead>
         <tr>
+          <th><input type="checkbox" ng-model="selectedAll" ng-click="checkAll()" /></th>
           <th class="text-center">שם לקוח</th>
           <th class="text-center">כתובת לקוח</th>
           <th class="text-center">דואר אלקטרוני</th>
@@ -34,6 +35,7 @@
       </thead>
       <tbody>
         <tr ng-repeat="x in names">
+          <td class="text-center"><input type="checkbox" ng-model="selectedAll" ng-click="checkAll()" /></td>
           <td class="text-center">{{ x.fullname}}</td>
           <td class="text-center">{{ x.address}}</td>
           <td class="text-center">{{ x.email}}</td>
