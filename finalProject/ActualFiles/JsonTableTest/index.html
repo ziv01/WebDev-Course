@@ -16,37 +16,37 @@
 </head>
 
 <body ng-app="crmApp">
-     <div ng-controller="TableCtrl">
-        <nav class="navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header navbar-right">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <div ng-controller="TableCtrl">
+                <nav class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header navbar-right">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">מסך לקוחות&nbsp;&nbsp;&nbsp;</a>
-                </div>
-        
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        
-                        <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#"><img src="resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
-                                <li><a href="#"></a></li>
-                                <li class="active"><a href="#"><img src="resources/AddUser.png" class="img-responsive addnew" alt="Image" width="24" height="24" ng-click="addNew()"></a></li>
-                                <li><a href="#"></a></li>
-                                 
-                        </ul>
-                        <form class="navbar-form navbar-left" role="search">
-                                <div class="form-group">
-                                        <input type="text" class="form-control text-right" placeholder="חפש" ng-model="filterArg">                                        
-                                </div>
-                        </form>
-                </div><!-- /.navbar-collapse -->
-        </nav>
-   
+                                <a class="navbar-brand" href="#">מסך לקוחות&nbsp;&nbsp;&nbsp;</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                                <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#"><img src="resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"><img src="resources/AddUser.png" class="img-responsive addnew" alt="Image" width="24" height="24" ng-click="addNew()"></a></li>
+                                        <li><a href="#"></a></li>
+
+                                </ul>
+                                <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                                <input type="text" class="form-control text-right" placeholder="חפש" ng-model="filterArg">
+                                        </div>
+                                </form>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                </nav>
                 <div class="row">
                         <div class="col-md-12" class="container">
                                 <form ng-submit="addNew()">
@@ -60,7 +60,8 @@
                                                                 <th class="text-center">דוא"ל</th>
                                                                 <th class="text-center">כתובת לקוח</th>
                                                                 <th class="text-center">שם לקוח</th>
-                                                                <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll" ng-click="checkAll()" /></th>
+                                                                <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll"
+                                                                                ng-click="checkAll()" /></th>
                                                         </tr>
                                                 </thead>
                                                 <tbody>

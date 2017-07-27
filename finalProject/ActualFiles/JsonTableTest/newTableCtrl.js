@@ -10,18 +10,20 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
                         'address': "",
                         'email': ""
                 });
-               // TODO: Remove after testing
-               console.log(JSON.stringify($scope.personalDetails))
-        };
+         };
         $scope.remove = function () {
                 var newDataList = [];
+                var yesNo = confirm("אתה עומד למחוק רשומה!") ;
+                 if (yesNo) {
                 $scope.selectedAll = false;
                 angular.forEach($scope.personalDetails, function (selected) {
                         if (!selected.selected) {
                                 newDataList.push(selected);
                         }
                 });
+                
                 $scope.personalDetails = newDataList;
+                } 
         };
         $scope.checkAll = function () {
                 if (!$scope.selectedAll) {
@@ -33,6 +35,7 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
                         personalDetails.selected = $scope.selectedAll;
                 });
         };
-
-        $scope.filterArg = "";
+        $scope.sortType = 'name'; // set the default sort type
+        $scope.sortReverse = false; // set the default sort order
+        $scope.filterArg = ""; // Set default value for search string
 }]);
