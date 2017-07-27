@@ -1,4 +1,4 @@
-app.controller("ListController", ['$scope', '$http', function ($scope, $http) {
+app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
         $http.get("CustomersDetails.json")
                 .then(function (response) { $scope.personalDetails = response.data; });
 
