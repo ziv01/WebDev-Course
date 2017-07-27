@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Add,Remove operations in AngularJS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+
+        </script>
+        <script src="./app.js"></script>
+        <!-- Need to add app.js imported below!> -->
+</head>
+
+<body ng-app="myapp" ng-controller="ListController">
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="panel panel-default">
+                                        <div class="panel-body">
+                                                <form ng-submit="addNew()">
+                                                        <table class="table table-striped table-bordered">
+                                                                <thead>
+                                                                        <tr>
+                                                                                <th><input type="checkbox" ng-model="selectedAll"
+                                                                                                ng- click="checkAll()" /></th>
+                                                                                <th>Firstname</th>
+                                                                                <th>Lastname</th>
+                                                                                <th>Email</th>
+                                                                        </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                        <tr ng-repeat="personalDetail in personalDetails">
+                                                                                <td>
+                                                                                        <input type="checkbox" ng-model="personalDetail.selected" />                                                                                        </td>
+                                                                                <td>
+                                                                                        <input type="text" class="form-control" ng-model="personalDetail.fname" required/></td>
+                                                                                <td>
+                                                                                        <input type="text" class="form-control" ng-model="personalDetail.lname" required/></td>
+                                                                                <td>
+                                                                                        <input type="email" class="form-control" ng-model="personalDetail.email" required/></td>
+                                                                        </tr>
+                                                                </tbody>
+                                                        </table>
+                                                        <div class="form-group">
+                                                                <input ng-hide="!personalDetails.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove">
+                                                                <input type="submit" class="btn btn-primary addnew pull-right" value="Add New">
+                                                        </div>
+                                                </form>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
+
+</html>
