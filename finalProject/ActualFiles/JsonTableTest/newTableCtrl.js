@@ -33,4 +33,6 @@ app.controller("ListController", ['$scope', '$http', function ($scope, $http) {
                         personalDetails.selected = $scope.selectedAll;
                 });
         };
+
+        $scope.filterArg = "";
 }]);

@@ -2,23 +2,55 @@
 <html>
 
 <head>
-        <title>Add,Remove operations in AngularJS</title>
+        <title>דף לקוח</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        <link rel="style.css">
+        <link rel="stylesheet" href="style.css">
         <script src="./app.js"></script>
         <script src="newTableCtrl.js"></script>
         <!-- Need to add app.js imported below!> -->
 </head>
 
 <body ng-app="crmApp">
-        <div  ng-controller="ListController">
+
+        <div ng-controller="ListController">
+        <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header navbar-right">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">מסך לקוחות&nbsp;&nbsp;&nbsp;</a>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><img src="resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
+                                <li><a href="#"></a></li>
+                                <li class="active"><a href="#"><img src="resources/AddUser.png" class="img-responsive addnew" alt="Image" width="24" height="24" ng-click="addNew()"></a></li>
+                                <li><a href="#"></a></li>
+                                 
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                        <input type="text" class="form-control text-right" placeholder="חפש" ng-model="filterArg">
+                                </div>
+                                <!-- <button type="submit" class="btn btn-default" >חפש</button> -->
+                        </form>
+                </div><!-- /.navbar-collapse -->
+        </nav>
+   
                 <div class="row">
-                        <div class="col-md-12"  class="container">
+                        <div class="col-md-12" class="container">
                                 <form ng-submit="addNew()">
                                         <table class="table table-striped table-bordered">
                                                 <thead>
@@ -30,27 +62,31 @@
                                                                 <th class="text-center">דוא"ל</th>
                                                                 <th class="text-center">כתובת לקוח</th>
                                                                 <th class="text-center">שם לקוח</th>
-                                                                <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll" ng- click="checkAll()"/></th>
+                                                                <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll" ng-click="checkAll()" /></th>
                                                         </tr>
                                                 </thead>
                                                 <tbody>
-                                                        <tr ng-repeat="personalDetail in personalDetails">
+                                                        <tr ng-repeat="personalDetail in personalDetails | filter:filterArg">
                                                                 </td>
-                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.companyID" required/></td>
-                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.company" required/></td>
-                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.mobile" required/></td>
-                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.phone" required/></td>
-                                                                <td><input type="email" class="form-control text-center" ng-model="personalDetail.email" required/></td>
-                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.address" required/></td>
-                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.fullName" required/></td>
-                                                                <td><input type="checkbox" class="text-center" ng-model="personalDetail.selected"/>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.companyID"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.company"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.mobile"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.phone"
+                                                                                required/></td>
+                                                                <td><input type="email" class="form-control text-center" ng-model="personalDetail.email"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.address"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.fullName"
+                                                                                required/></td>
+                                                                <td><input type="checkbox" class="text-center" ng-model="personalDetail.selected"
+                                                                        />
                                                         </tr>
                                                 </tbody>
                                         </table>
-                                        <div class="form-group">
-                                                <input ng-hide="!personalDetails.length" type="button" class="btn btn-danger pull-left" ng-click="remove()" value="מחק רשומה">
-                                                <input type="submit" class="btn btn-primary addnew pull-left" value="הוסף רשומה">
-                                        </div>
                                 </form>
                         </div>
                 </div>
