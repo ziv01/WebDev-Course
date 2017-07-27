@@ -1,10 +1,30 @@
 [
-  {"fullName":"עמיר פרץ", "address":"האריה 3 רעננה, מיקוד 30343"},
-  {"fullName":"Uranus", "address":19.208},
-  {"fullName":"Saturn", "address":9.523}, 
-  {"fullName":"Jupiter", "address":5.203}, 
-  {"fullName":"Mars", "address":1.524}, 
-  {"fullName":"Earth", "address":1.0}, 
-  {"fullName":"Venus", "address":0.723}, 
-  {"fullName":"Mercury", "address":0.387}    
+                {
+                        "fullName": "Sateesh",
+                        "address": "Mus",
+                        "email": "sateeshm@gmail.com",
+                        "phone": "03-8877665",
+                        "mobile":"054-1122334",
+                        "company":"Alpha Inc",
+                        "companyID":"5111111"
+                },
+                {
+                        "fullName": "Santhosh",
+                        "address":"Lakish",
+                        "email": "santhoshl@gmail.com",
+                        "phone": "03-8877665",
+                        "mobile":"054-1122334",
+                        "company":"Alpha Inc",
+                        "companyID":"5111111"
+                        
+                },
+                {
+                        "fullName": "Fatush",
+                        "address": "rush",
+                        "email": "rameshr@gmail.com",
+                        "phone": "03-8877665",
+                        "mobile":"054-1122334",
+                        "company":"Alpha Inc",
+                        "companyID":"5111111"                       
+                }
 ]
