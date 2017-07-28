@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>דף לקוח</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+        <!--AngularJS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"​></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        ​<!--Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        ​<!--UI Bootstrap-->
+        <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+        <!-- Adding some fonts and icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+        <!-- Local application resources -->
+        <link rel="stylesheet" href="../../css/style.css">
+        <script src="../app.js"></script>
+        <script src="newTableCtrl.js"></script>
+ 
+</head>
+
+<body ng-app="crmApp">
+        <div ng-controller="TableCtrl">
+                <nav class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header navbar-right">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button>
+                                <a class="navbar-brand" href="#" >מסך לקוחות&nbsp;&nbsp;&nbsp;</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                                <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="מחק רשומה"><img src="../resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="הוסף רשומה"><img src="../resources/AddUser.png" class="img-responsive addnew" alt="Image" width="24" height="24" ng-click="addNew()"></a></li>
+                                        <li><a href="#"></a></li>
+                                </ul>
+                                <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                                <input type="text" class="form-control text-right" placeholder="חפש" ng-model="filterArg">
+                                        </div>
+                                </form>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                </nav>
+                <div class="row">
+                        <div class="col-md-12" class="container">
+                                <form ng-submit="addNew()">
+                                        <table class="table table-striped table-bordered">
+                                                <thead>
+                                                        <tr>
+                                                                <th class="text-center">מספר ח-פ</th>
+                                                                <th class="text-center">שם חברה</th>
+                                                                <th class="text-center">טלפון נייד</th>
+                                                                <th class="text-center">טלפון</th>
+                                                                <th class="text-center">דוא"ל</th>
+                                                                <th class="text-center">כתובת לקוח</th>
+                                                                <th class="text-center">שם לקוח</th>
+                                                                <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll"
+                                                                                ng-click="checkAll()" /></th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr ng-repeat="personalDetail in personalDetails | filter:filterArg">
+                                                                </td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.companyID"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.company"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.mobile"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.phone"
+                                                                                required/></td>
+                                                                <td><input type="email" class="form-control text-center" ng-model="personalDetail.email"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.address"
+                                                                                required/></td>
+                                                                <td><input type="text" class="form-control text-center" ng-model="personalDetail.fullName"
+                                                                                required/></td>
+                                                                <td><input type="checkbox" class="text-center" ng-model="personalDetail.selected"
+                                                                        />
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </form>
+                        </div>
+                </div>
+        </div>
+        <ng-view></ng-view>
+</body>
+
+</html>
