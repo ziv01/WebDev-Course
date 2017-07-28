@@ -34,14 +34,20 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
         };
         
         $scope.checkAll = function () {
-                if (!$scope.selectedAll) {
+                var newDataList = [];
+                console.log($scope.selectedAll);
+                if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
+                        $scope.personalDetails = newDataList;
+                }
+                /* if (!$scope.selectedAll) {
                         $scope.selectedAll = true;
                 } else {
                         $scope.selectedAll = false;
                 }
                 angular.forEach($scope.personalDetails, function (personalDetails) {
                         personalDetails.selected = $scope.selectedAll;
-                });
+                }
+                */
         };
         $scope.sortType = 'name'; // set the default sort type
         $scope.sortReverse = false; // set the default sort order
