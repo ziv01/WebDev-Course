@@ -17,18 +17,22 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
          };
         $scope.remove = function () {
                 var newDataList = [];
-                var yesNo = confirm("אתה עומד למחוק רשומה!") ;
-                 if (yesNo) {
                 $scope.selectedAll = false;
-                angular.forEach($scope.personalDetails, function (selected) {
-                        if (!selected.selected) {
-                                newDataList.push(selected);
-                        }
+                angular.forEach($scope.personalDetails, function (checked) {
+                        console.log(checked);
+                        if (!checked.checked) {
+                                  newDataList.push(checked); 
+                       }
                 });
-                
-                $scope.personalDetails = newDataList;
-                } 
+                var origListLength=$scope.personalDetails.length;
+                var newListLength=newDataList.length;
+                if (newListLength < origListLength) {
+                      if (confirm("אתה עומד למחוק רשומה!")) {
+                        $scope.personalDetails = newDataList;
+                      }  
+                }                
         };
+        
         $scope.checkAll = function () {
                 if (!$scope.selectedAll) {
                         $scope.selectedAll = true;

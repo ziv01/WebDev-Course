@@ -33,8 +33,7 @@
                                 <table class="table table-striped table-bordered">
                                         <thead>
                                                 <tr>
-                                                        <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll"
-                                                                        ng-click="checkAll()" /></th>                                                        
+                                                        <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll" ng-click="checkAll()"/></th>                                                        
                                                         <th class="text-center">שם לקוח</th>
                                                         <th class="text-center">כתובת לקוח</th>
                                                         <th class="text-center">דוא"ל</th>
@@ -47,7 +46,7 @@
                                         <tbody>
                                                 <tr ng-repeat="personalDetail in personalDetails | filter:filterArg">
                                                         </td>
-                                                        <td><input type="checkbox" class="text-center" ng-model="personalDetail.selected"></td>                                            
+                                                        <td><input type="checkbox" class="text-center" ng-model="personalDetail.checked"></td>                                            
                                                         <td><input type="text" class="form-control text-center" ng-model="personalDetail.fullName"
                                                                         required/></td>
                                                         <td><input type="text" class="form-control text-center" ng-model="personalDetail.address"
