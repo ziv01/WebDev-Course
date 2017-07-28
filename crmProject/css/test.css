@@ -1,0 +1,12 @@
+body {
+	direction:rtl;
+	font-family:Assistant;
+}
+
+jumbotron {
+    margin: 0;
+}
+
+.navbar {
+    margin: 0;
+}
