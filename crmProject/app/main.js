@@ -6,16 +6,15 @@ app.config(function ($routeProvider) {
 			templateUrl: 'app/home/home.html',
 			controller: 'TableCtrl'
 		})
-
 		.when('/customers', {
 			templateUrl: 'app/customersTables/customers.html',
 			controller: 'TableCtrl'
 		})
-		.when('/viewStudents', {
-			templateUrl: 'viewStudents.html',
-			controller: 'StudentController'
+		.when('/technical', {
+			templateUrl: 'app/technicalTables/technicians.html',
+			controller: 'TechTableCtrl'
 		})
-		.otherwise({
+	.otherwise({
 			redirectTo: '/home'
 		});
 });

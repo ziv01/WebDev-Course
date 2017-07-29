@@ -1,11 +1,11 @@
-app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
-        $http.get("app/customersTables/CustomersDetails.json")
-                .then(function (response) { $scope.personalDetails = response.data; });
+app.controller("TechTableCtrl", ['$scope', '$http', function ($scope, $http) {
+        $http.get("app/technicalTables/techDetails.json")
+                .then(function (response) { $scope.techDetails = response.data; });
 
 
         $scope.addNew = function () {
 
-                $scope.personalDetails.push({
+                $scope.techDetails.push({
                         'fullName': "",
                         'address': "",
                         'email': "",
@@ -18,17 +18,17 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
         $scope.remove = function () {
                 var newDataList = [];
                 $scope.selectedAll = false;
-                angular.forEach($scope.personalDetails, function (checked) {
+                angular.forEach($scope.techDetails, function (checked) {
                         console.log(checked);
                         if (!checked.checked) {
                                   newDataList.push(checked); 
                        }
                 });
-                var origListLength=$scope.personalDetails.length;
+                var origListLength=$scope.techDetails.length;
                 var newListLength=newDataList.length;
                 if (newListLength < origListLength) {
                       if (confirm("אתה עומד למחוק רשומה!")) {
-                        $scope.personalDetails = newDataList;
+                        $scope.techDetails = newDataList;
                       }  
                 }                
         };
@@ -37,20 +37,20 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
                 var newDataList = [];
                 console.log($scope.selectedAll);
                 if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
-                        $scope.personalDetails = newDataList;
+                        $scope.techDetails = newDataList;
                 }
                 /* if (!$scope.selectedAll) {
                         $scope.selectedAll = true;
                 } else {
                         $scope.selectedAll = false;
                 }
-                angular.forEach($scope.personalDetails, function (personalDetails) {
-                        personalDetails.selected = $scope.selectedAll;
+                angular.forEach($scope.techDetails, function (techDetails) {
+                        techDetails.selected = $scope.selectedAll;
                 }
                 */
         };
         $scope.sortType = 'name'; // set the default sort type
         $scope.sortReverse = false; // set the default sort order
         $scope.filterArg = ""; // Set default value for search string
-        $scope.message = "Click on the hyper link to view the students list."; //TODO: just for testing routing
+        $scope.isLoggedIn = true; //if not on main page hide login option.
 }]);

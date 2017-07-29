@@ -21,7 +21,10 @@ body {
     color:#257e94;
   	margin-bottom:0;
     }
+.well {
 
+  padding:5px;
+}
 .navbar-default {
   background-color: #d5e1df;
   border-color: #86af49;

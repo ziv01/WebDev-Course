@@ -19,7 +19,6 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
                 var newDataList = [];
                 $scope.selectedAll = false;
                 angular.forEach($scope.personalDetails, function (checked) {
-                        console.log(checked);
                         if (!checked.checked) {
                                   newDataList.push(checked); 
                        }
@@ -52,5 +51,5 @@ app.controller("TableCtrl", ['$scope', '$http', function ($scope, $http) {
         $scope.sortType = 'name'; // set the default sort type
         $scope.sortReverse = false; // set the default sort order
         $scope.filterArg = ""; // Set default value for search string
-        $scope.message = "Click on the hyper link to view the students list."; //TODO: just for testing routing
+        $scope.isLoggedIn = true; //if not on main page hide login option.
 }]);

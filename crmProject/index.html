@@ -22,7 +22,8 @@
   <!-- Local application resources -->
   <link rel="stylesheet" href="css/style.css">
   <script src="app/main.js"></script>
-  <script type="text/javascript" src="app/customersTables/newTableCtrl.js"></script>
+  <script type="text/javascript" src="app/customersTables/CustomerTableCtrl.js"></script>
+  <script type="text/javascript" src="app/technicalTables/techTableCtrl.js"></script>
 </head>
 
 <body ng-app="crmApp">
@@ -37,17 +38,17 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="container">        
         <div class="navbar-header navbar-right">
-          <a class="navbar-brand tooltip-bottom" href="index.html" data-toggle="tooltip" data-placement="bottom" title="דף בית"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+          <a class="navbar-brand tooltip-bottom" href="#!home" data-toggle="tooltip" data-placement="bottom" title="דף בית"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
         </div>
         <div>
           <ul class="nav navbar-nav pull-right">
-            <li><a class="" href="#"><i class="fa fa-tag" aria-hidden="true"></i>    מלאי</a></li>
-            <li><a class="" href="#"><i class="fa fa-list-alt" aria-hidden="true"></i>    חשבוניות </a></li>
-            <li><a class="" href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i>    אנשי קשר</a></li>
-            <li><a class="active" href="#!customers"><i class="fa fa-user" aria-hidden="true"></i>    לקוחות</a></li>
+            <li><a href="#"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;מודול מלאי</a></li>
+            <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;&nbsp;מודול הנהלת חשבונות</a></li>
+            <li><a href="#!technical"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול טכנאים</a></li>
+            <li><a href="#!customers"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;מודול לקוחות</a></li>
           </ul>
           <ul class="nav navbar-nav">
-           <li><a href="login.html" data-toggle="tooltip" data-placement="bottom" title="התחבר למערכת"><img src="app/resources/login.png" class="img-responsive" alt="login">
+           <li><a href="login" data-toggle="tooltip" data-placement="bottom" title="התחבר למערכת"><img src="app/resources/login.png" class="img-responsive" alt="login">
            </a></li> 
           </ul>
         </div>
