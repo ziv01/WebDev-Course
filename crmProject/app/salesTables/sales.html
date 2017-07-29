@@ -1,4 +1,4 @@
-<div ng-controller="TechTableCtrl">
+<div ng-controller="SalesTableCtrl">
   <nav class="navbar navbar-default" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header navbar-right">
@@ -8,15 +8,15 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                         </button>
-      <a class="navbar-brand" href="#!technical">&nbsp;&nbsp;&nbsp;מסך מודול ניהול אנשי שטח</a>
+      <a class="navbar-brand" href="#!sales">&nbsp;&nbsp;&nbsp;מסך מודול ניהול אנשי שטח</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#!technical" data-toggle="tooltip" data-placement="bottom" title="מחק רשומה"><img src="app/resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
-        <li><a href="#!technical" data-toggle="tooltip" data-placement="bottom" title="הוסף רשומה"><img src="app/resources/AddUser.png" class="img-responsive addnew" alt="Image" width="24" height="24" ng-click="addNew()"></a></li>
+        <li><a href="#!sales" data-toggle="tooltip" data-placement="bottom" title="מחק רשומה"><img src="app/resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
+        <li><a href="#!sales" data-toggle="tooltip" data-placement="bottom" title="הוסף רשומה"><img src="app/resources/AddUser.png" class="img-responsive addnew" alt="Image" width="24" height="24" ng-click="addNew()"></a></li>
         <li><a href="#"></a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
@@ -46,17 +46,17 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="techDetail in techDetails | filter:filterArg">
+            <tr ng-repeat="saleDetail in saleDetails | filter:filterArg">
               </td>
-              <td><input type="checkbox" class="text-center" ng-model="techDetail.checked"></td>
-              <td><input type="text" class="form-control text-center" ng-model="techDetail.techName" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="techDetail.callID" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="techDetail.description" required/></td>              
-              <td><input type="text" class="form-control text-center" ng-model="techDetail.company" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="techDetail.address" required/></td>
-              <td><input type="email" class="form-control text-center" ng-model="techDetail.email" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="techDetail.phone" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="techDetail.mobile" required/></td>
+              <td><input type="checkbox" class="text-center" ng-model="saleDetail.checked"></td>
+              <td><input type="text" class="form-control text-center" ng-model="saleDetail.saleName" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="saleDetail.callID" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="saleDetail.description" required/></td>              
+              <td><input type="text" class="form-control text-center" ng-model="saleDetail.company" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="saleDetail.address" required/></td>
+              <td><input type="email" class="form-control text-center" ng-model="saleDetail.email" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="saleDetail.phone" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="saleDetail.mobile" required/></td>
             </tr>
           </tbody>
         </table>
