@@ -6,13 +6,14 @@ app.controller("TechTableCtrl", ['$scope', '$http', function ($scope, $http) {
         $scope.addNew = function () {
 
                 $scope.techDetails.push({
-                        'fullName': "",
+                        'techName': "",
+                        'callID': "",
+                        'description': "",
+                        'company': "",
                         'address': "",
                         'email': "",
                         'phone': "",
-                        'mobile': "",
-                        'company': "",
-                        'companyID': ""
+                        'mobile': ""                        
                  });
          };
         $scope.remove = function () {
