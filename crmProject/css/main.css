@@ -9,7 +9,7 @@ body {
     margin-bottom: 0;
     margin-top: 0;
 }
-/*.gradHeader {
+.gradHeader {
     height: 100%;
     background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#80ced6, #d5f4e6); /* For Safari 5.1 to 6.0 */
@@ -19,9 +19,10 @@ body {
     background-repeat:no-repeat;
     background-size: 100% 100%;
     color:#257e94;
-  	margin-bottom:0;
-    }
-*/
+    margin-bottom:0;
+    padding: 0;
+    /* background-image: url(../app/resources/jumboBar.png); */
+     }
   /*
 HEX: #d5f4e6
 
@@ -34,6 +35,7 @@ HEX: #618685
 .well {
 
   padding:5px;
+  background-color: #fefbd8;
 }
 .navbar-default {
   background-color: #d5e1df;

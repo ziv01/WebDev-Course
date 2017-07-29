@@ -35,14 +35,14 @@
             <tr>
               <!-- <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll" ng-click="checkAll()"/></th>-->
               <th><input type="checkbox" ng-model="selectedAll" ng-change="checkAll()"></th>
-              <th class="text-center">איש המכירות</th>
-              <th class="text-center">מספר הצעת מחיר</th>
-              <th class="text-center">תאור הפריט</th>
-              <th class="text-center">תקציב רכש</th>
-              <th class="text-center">הלקוח</th>
-              <th class="text-center">דוא"ל לקוח</th>
-              <th class="text-center">נייד לקוח</th>
-              <th class="text-center">רכישות קודמות</th>              
+              <th class="text-center">שם פריט</th>
+              <th class="text-center">שם יצרן</th>
+              <th class="text-center">שם ספק</th>
+              <th class="text-center">קוד פריט</th>
+              <th class="text-center">קטגוריה</th>
+              <th class="text-center">כמות במלאי</th>
+              <th class="text-center">מחיר ליח'</th>
+              <th class="text-center">תיאור הפריט</th>              
             </tr>
           </thead>
           <tbody>
@@ -50,13 +50,13 @@
               </td>
               <td><input type="checkbox" class="text-center" ng-model="inventoryDetail.checked"></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.inventoryName" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.callID" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.description" required/></td>              
-              <td><input type="number" class="form-control text-center" ng-model="inventoryDetail.budget" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.company" required/></td>
-              <td><input type="email" class="form-control text-center" ng-model="inventoryDetail.email" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.mobile" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.pastDeals" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.manufacturer" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.dealer" required/></td>              
+              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.itemID" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.category" required/></td>
+              <td><input type="number" class="form-control text-center" ng-model="inventoryDetail.itemCount" required/></td>
+              <td><input type="number" class="form-control text-center" ng-model="inventoryDetail.itemPrice" required/></td>
+              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.description" required/></td>
             </tr>
           </tbody>
         </table>

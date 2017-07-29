@@ -1,10 +1,10 @@
 [
-  {"inventoryName":"משה בן יוסף", "callID":"#1234", "description":"תקלת מדפסת", "budget":1000000, "company":"משקפות בע'מ", "email": "amirp@blah.com", "mobile": "050-1122334", "pastDeals": "#0029873"},
-  {"inventoryName":"יוסי נגר", "callID":"#1234", "description":"תקלת מדפסת", "budget":2000000, "company": "יוסי נגר בע'מ", "email": "amiro@blah.com", "mobile": "050-2233441", "pastDeals": "#00298092"},
-  {"inventoryName":"ניב מרגלית", "callID":"#1234", "description":"תקלת מדפסת", "budget":2200000,  "company": "ניב מרגלית בע'מ", "email": "arelm@blah.com", "mobile": "050-3344551", "pastDeals": "#0029809"}, 
-  {"inventoryName":"דן מרגלית", "callID":"#1234", "description":"תקלת מדפסת", "budget":453000, "company": "דן מרגלית בע'מ", "email": "buzih@blah.com", "mobile": "050-4455661", "pastDeals": "#0029813"}, 
-  {"inventoryName":"בן כספית", "callID":"#1234", "description":"תקלת מדפסת", "budget":129876, "company": "בן כספית בע'מ", "email": "zohirb@blah.com", "mobile": "050-5566771", "pastDeals": "#0029823"}, 
-  {"inventoryName":"ארז תדמור", "callID":"#1234", "description":"תקלת מדפסת", "budget":110292, "company": "ארז תדמור בע'מ", "email": "bibin@blah.com", "mobile": "050-6677881", "pastDeals": "#0029833"}, 
-  {"inventoryName":"אראל סגל", "callID":"#1234", "description":"תקלת מדפסת", "budget":887261, "company": "אראל סגל בע'מ", "email": "naftalib@blah.com", "mobile": "050-7788991", "pastDeals": "#0029883"}, 
-  {"inventoryName":"קלמן ליבסקינד", "callID":"#1234", "description":"תקלת מדפסת", "budget":287232, "company": "קלמן ליבסקינד בע'מ", "email": "zehavag@blah.com", "mobile": "050-8899001", "pastDeals": "#0029001"}
+  {"inventoryName":"עכבר אלחוטי", "manufacturer":"לוג'יטק",  "dealer":"א.א חיון", "itemID":"1234", "category":"עכבר", "itemCount":20, "itemPrice":50, "description":"עכבר אלחוטי "},
+  {"inventoryName":"צורב DVD", "manufacturer":"dell",  "dealer":"הראל מחשבים", "itemID":"#1002", "category":"צורב", "itemCount":24, "itemPrice":100, "description":"צורב תקליטורים"},
+  {"inventoryName":"מקלדת אלחוטית", "manufacturer":"לוג'יטק",  "dealer":"KSP", "itemID":"#1003", "category":"מקלדת", "itemCount":33, "itemPrice":190, "description":"מקלדת אלחוטית"}, 
+  {"inventoryName":"מארז מחשב", "manufacturer":"Corsair",  "dealer":"Ivory", "itemID":"#1102", "category":"מארז", "itemCount":12, "itemPrice":321, "description":"מארז Full tower"}, 
+  {"inventoryName":"מסך מחשב", "manufacturer":"dell",  "dealer":"א.א חיון", "itemID":"#1209", "category":"מסך", "itemCount":22, "itemPrice":1345, "description":"מסך 24 אינטש פאנל ISP"}, 
+  {"inventoryName":"כונן SSD", "manufacturer":"Samsung",  "dealer":"הראל מחשבים", "itemID":"#1089", "category":"SSD", "itemCount":41, "itemPrice":1234, "description":"כונן פלאש SSD 256GB תוצרת סמסונג"}, 
+  {"inventoryName":"תחנת עבודה", "manufacturer":"dell",  "dealer":"KSP", "itemID":"#1200", "category":"מחשב", "itemCount":25, "itemPrice":6543, "description":"מחשב שולחני תוצרת DELL"}, 
+  {"inventoryName":"זיכרון DDR4", "manufacturer":"Corsair",  "dealer":"Ivory", "itemID":"#1934", "category":"זיכרון", "itemCount":123, "itemPrice":354, "description":"שני מקלות זיכרון בנפח של 16 גיגה"}
 ]

@@ -7,13 +7,13 @@ app.controller("InventoryTableCtrl", ['$scope', '$http', function ($scope, $http
 
                 $scope.inventoryDetails.push({
                         'inventoryName': "",
-                        'callID': "",
-                        'description': "",
-                        'budget': "",
-                        'company': "",
-                        'email': "",
-                        'mobile': "",
-                        'pastDeals': ""                        
+                        'manufacturer': "",
+                        'dealer': "",
+                        'itemID': "",
+                        'category': "",
+                        'itemCount': "",
+                        'itemPrice': "",
+                        'description': ""                        
                  });
          };
         $scope.remove = function () {
