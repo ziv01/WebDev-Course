@@ -18,6 +18,10 @@ app.config(function ($routeProvider) {
 			templateUrl: 'app/salesTables/sales.html',
 			controller: 'SalesTableCtrl'
 		})
+		.when('/inventory', {
+			templateUrl: 'app/inventoryTables/inventory.html',
+			controller: 'InventoryTableCtrl'
+		})
 		
 	.otherwise({
 			redirectTo: '/home'
