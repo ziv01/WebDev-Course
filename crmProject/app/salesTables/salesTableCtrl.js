@@ -9,11 +9,11 @@ app.controller("SalesTableCtrl", ['$scope', '$http', function ($scope, $http) {
                         'saleName': "",
                         'callID': "",
                         'description': "",
+                        'budget': "",
                         'company': "",
-                        'address': "",
                         'email': "",
-                        'phone': "",
-                        'mobile': ""                        
+                        'mobile': "",
+                        'pastDeals': ""                        
                  });
          };
         $scope.remove = function () {
