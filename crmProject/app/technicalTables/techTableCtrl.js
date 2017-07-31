@@ -13,43 +13,35 @@ app.controller("TechTableCtrl", ['$scope', '$http', function ($scope, $http) {
                         'address': "",
                         'email': "",
                         'phone': "",
-                        'mobile': ""                        
-                 });
-         };
+                        'mobile': ""
+                });
+        };
         $scope.remove = function () {
                 var newDataList = [];
-                $scope.selectedAll = false;
-                angular.forEach($scope.techDetails, function (checked) {
-                        console.log(checked);
-                        if (!checked.checked) {
-                                  newDataList.push(checked); 
-                       }
-                });
-                var origListLength=$scope.techDetails.length;
-                var newListLength=newDataList.length;
-                if (newListLength < origListLength) {
-                      if (confirm("אתה עומד למחוק רשומה!")) {
-                        $scope.techDetails = newDataList;
-                      }  
-                }                
-        };
-        
-        $scope.checkAll = function () {
-                var newDataList = [];
-                console.log($scope.selectedAll);
-                if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
-                        $scope.techDetails = newDataList;
-                }
-                /* if (!$scope.selectedAll) {
-                        $scope.selectedAll = true;
+                //$scope.selectedAll = false;
+                if ($scope.selectedAllTech !== true || $scope.selectedAllTech === null) {
+                        angular.forEach($scope.techDetails, function (checked) {
+                                console.log(!$scope.selectedAll);
+                                if (!checked.checked) {
+                                        newDataList.push(checked);
+                                }
+                        });
+                        var origListLength = $scope.techDetails.length;
+                        var newListLength = newDataList.length;
+                        if (newListLength < origListLength) {
+                                if (confirm("אתה עומד למחוק רשומה!")) {
+                                        $scope.techDetails = newDataList;
+                                }
+                        }
                 } else {
-                        $scope.selectedAll = false;
+                        var newDataList = [];
+                        console.log(!$scope.selectedAll);
+                        if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
+                                $scope.techDetails = newDataList;
+                        }
                 }
-                angular.forEach($scope.techDetails, function (techDetails) {
-                        techDetails.selected = $scope.selectedAll;
-                }
-                */
         };
+
         $scope.sortType = 'name'; // set the default sort type
         $scope.sortReverse = false; // set the default sort order
         $scope.filterArg = ""; // Set default value for search string
