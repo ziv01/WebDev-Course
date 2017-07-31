@@ -34,7 +34,7 @@
           <thead>
             <tr>
               <!-- <th class="text-center"><input type="checkbox" class="text-center" ng-model="selectedAll" ng-click="checkAll()"/></th>-->
-              <th><input type="checkbox" ng-model="selectedAll" ng-change="checkAll()"></th>
+              <th><input type="checkbox" ng-model="selectAllInventory"></th>
               <th class="text-center">שם פריט</th>
               <th class="text-center">שם יצרן</th>
               <th class="text-center">שם ספק</th>
@@ -48,7 +48,7 @@
           <tbody>
             <tr ng-repeat="inventoryDetail in inventoryDetails | filter:filterArg">
               </td>
-              <td><input type="checkbox" class="text-center" ng-model="inventoryDetail.checked"></td>
+              <td><input type="checkbox" class="text-center" ng-model="inventoryDetail.checked" data-ng-checked="selectAllInventory"></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.inventoryName" required/></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.manufacturer" required/></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.dealer" required/></td>              
