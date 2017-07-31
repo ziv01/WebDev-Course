@@ -1,4 +1,4 @@
-app.controller("TechTableCtrl", ['$scope', '$http', function ($scope, $http) {
+app.controller("TechTableCtrl", function ($scope, $http) {
         $http.get("app/technicalTables/techDetails.json")
                 .then(function (response) { $scope.techDetails = response.data; });
 
@@ -46,4 +46,4 @@ app.controller("TechTableCtrl", ['$scope', '$http', function ($scope, $http) {
         $scope.sortReverse = false; // set the default sort order
         $scope.filterArg = ""; // Set default value for search string
         $scope.isLoggedIn = true; //if not on main page hide login option.
-}]);
+});
