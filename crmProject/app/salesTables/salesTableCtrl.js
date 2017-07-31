@@ -1,4 +1,4 @@
-app.controller("SalesTableCtrl", ['$scope', '$http', function ($scope, $http) {
+app.controller("SalesTableCtrl", function ($scope, $http) {
         $http.get("app/salesTables/salesDetails.json")
                 .then(function (response) { $scope.saleDetails = response.data; });
 
@@ -16,42 +16,33 @@ app.controller("SalesTableCtrl", ['$scope', '$http', function ($scope, $http) {
                         'pastDeals': ""                        
                  });
          };
+
         $scope.remove = function () {
                 var newDataList = [];
-                $scope.selectedAll = false;
-                angular.forEach($scope.saleDetails, function (checked) {
-                        console.log(checked);
-                        if (!checked.checked) {
-                                  newDataList.push(checked); 
-                       }
-                });
-                var origListLength=$scope.saleDetails.length;
-                var newListLength=newDataList.length;
-                if (newListLength < origListLength) {
-                      if (confirm("אתה עומד למחוק רשומה!")) {
-                        $scope.saleDetails = newDataList;
-                      }  
-                }                
-        };
-        
-        $scope.checkAll = function () {
-                var newDataList = [];
-                console.log($scope.selectedAll);
-                if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
-                        $scope.saleDetails = newDataList;
-                }
-                /* if (!$scope.selectedAll) {
-                        $scope.selectedAll = true;
+                //$scope.selectedAll = false;
+                if ($scope.selectedAllSales !== true || $scope.selectedAllSales === null) {
+                        angular.forEach($scope.saleDetails, function (checked) {
+                                if (!checked.checked) {
+                                        newDataList.push(checked);
+                                }
+                        });
+                        var origListLength = $scope.saleDetails.length;
+                        var newListLength = newDataList.length;
+                        if (newListLength < origListLength) {
+                                if (confirm("אתה עומד למחוק רשומה!")) {
+                                        $scope.saleDetails = newDataList;
+                                }
+                        }
                 } else {
-                        $scope.selectedAll = false;
+                        var newDataList = [];
+                        if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
+                                $scope.saleDetails = newDataList;
+                        }
                 }
-                angular.forEach($scope.saleDetails, function (saleDetails) {
-                        saleDetails.selected = $scope.selectedAll;
-                }
-                */
         };
-        $scope.sortType = 'name'; // set the default sort type
+         
+       $scope.sortType = 'name'; // set the default sort type
         $scope.sortReverse = false; // set the default sort order
         $scope.filterArg = ""; // Set default value for search string
         $scope.isLoggedIn = true; //if not on main page hide login option.
-}]);
+});

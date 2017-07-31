@@ -21,7 +21,6 @@ app.controller("TechTableCtrl", function ($scope, $http) {
                 //$scope.selectedAll = false;
                 if ($scope.selectedAllTech !== true || $scope.selectedAllTech === null) {
                         angular.forEach($scope.techDetails, function (checked) {
-                                console.log(!$scope.selectedAll);
                                 if (!checked.checked) {
                                         newDataList.push(checked);
                                 }
@@ -35,7 +34,6 @@ app.controller("TechTableCtrl", function ($scope, $http) {
                         }
                 } else {
                         var newDataList = [];
-                        console.log(!$scope.selectedAll);
                         if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
                                 $scope.techDetails = newDataList;
                         }

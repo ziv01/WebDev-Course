@@ -34,7 +34,6 @@ app.controller("TableCtrl", function ($scope, $http) {
                         }
                 } else {
                         var newDataList = [];
-                        console.log(!$scope.selectedAllCustomers);
                         if (confirm("אתה עומד למחוק את כל הרשומות!!")) {
                                 $scope.personalDetails = newDataList;
                         }
