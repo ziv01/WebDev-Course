@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--AngularJS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js" ​></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  ​
+  <!--Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  ​
+  <!--UI Bootstrap-->
+  <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+  <!-- Adding awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+  <!-- Local application resources -->
+  <link rel="stylesheet" href="css/main.css">
+  <script src="app/main.js"></script>
+  <script type="text/javascript" src="app/customersTables/CustomerTableCtrl.js"></script>
+  <script type="text/javascript" src="app/technicalTables/techTableCtrl.js"></script>
+  <script type="text/javascript" src="app/salesTables/salesTableCtrl.js"></script>
+  <script type="text/javascript" src="app/inventoryTables/inventoryTableCtrl.js"></script>
+  <script src="app/model/user.js"></script>
+  <script src="app/shared/navCtrl.js"></script>
+  <script src="app/home/homeCtrl.js"></script>
+  <script src="app/login/loginCtrl.js"></script>
+
+</head>
+
+<body ng-app="crmApp">
+  <nav class="navbar navbar-default">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+      aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+      </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="container">
+        <div class="navbar-header navbar-right">
+          <a class="navbar-brand tooltip-bottom" href="#!home" data-toggle="tooltip" data-placement="bottom" title="דף בית"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="#!inventory"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול מוצרים</a></li>
+            <li><a href="#!technical"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול אנשי שטח</a></li>
+            <li><a href="#!sales"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;מודול מכירות</a></li>
+            <li><a href="#!customers"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;מודול לקוחות</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="login" data-toggle="tooltip" data-placement="bottom" title="התחבר למערכת" ng-click="login()"><img src="app/resources/login.png" class="img-responsive" alt="login">
+           </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron gradHeader">
+
+    <img src="app/resources/jumboBar.png" class="img-responsive center-block" alt="Image">
+
+    <!-- <h1><i class="fa fa-cubes" aria-hidden="true" style="color:#0b0a6b;"></i> גרין סי.אר.אם<small>    מערכת ניהול לקוחות</small></h1> -->
+  </div>
+  <main>
+    <ng-view></ng-view>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+[
+  {"saleName":"משה בן יוסף", "callID":"#1234", "description":"תקלת מדפסת", "budget":1000000, "company":"משקפות בע'מ", "email": "amirp@blah.com", "mobile": "050-1122334", "pastDeals": "#0029873"},
+  {"saleName":"יוסי נגר", "callID":"#1234", "description":"תקלת מדפסת", "budget":2000000, "company": "יוסי נגר בע'מ", "email": "amiro@blah.com", "mobile": "050-2233441", "pastDeals": "#00298092"},
+  {"saleName":"ניב מרגלית", "callID":"#1234", "description":"תקלת מדפסת", "budget":2200000,  "company": "ניב מרגלית בע'מ", "email": "arelm@blah.com", "mobile": "050-3344551", "pastDeals": "#0029809"}, 
+  {"saleName":"דן מרגלית", "callID":"#1234", "description":"תקלת מדפסת", "budget":453000, "company": "דן מרגלית בע'מ", "email": "buzih@blah.com", "mobile": "050-4455661", "pastDeals": "#0029813"}, 
+  {"saleName":"בן כספית", "callID":"#1234", "description":"תקלת מדפסת", "budget":129876, "company": "בן כספית בע'מ", "email": "zohirb@blah.com", "mobile": "050-5566771", "pastDeals": "#0029823"}, 
+  {"saleName":"ארז תדמור", "callID":"#1234", "description":"תקלת מדפסת", "budget":110292, "company": "ארז תדמור בע'מ", "email": "bibin@blah.com", "mobile": "050-6677881", "pastDeals": "#0029833"}, 
+  {"saleName":"אראל סגל", "callID":"#1234", "description":"תקלת מדפסת", "budget":887261, "company": "אראל סגל בע'מ", "email": "naftalib@blah.com", "mobile": "050-7788991", "pastDeals": "#0029883"}, 
+  {"saleName":"קלמן ליבסקינד", "callID":"#1234", "description":"תקלת מדפסת", "budget":287232, "company": "קלמן ליבסקינד בע'מ", "email": "zehavag@blah.com", "mobile": "050-8899001", "pastDeals": "#0029001"}
+]
