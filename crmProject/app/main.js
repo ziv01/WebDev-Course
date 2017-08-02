@@ -1,8 +1,8 @@
-var app = angular.module("crmApp", ['ngRoute']);
+var app = angular.module("crmApp", ['ngRoute','ngAnimate', 'ui.bootstrap']);
 
 app.config(function ($routeProvider) {
 	$routeProvider
-		.when('/home', {
+		.when('/', {
 			templateUrl: 'app/home/home.html',
 			controller: 'TableCtrl'
 		})
@@ -22,9 +22,13 @@ app.config(function ($routeProvider) {
 			templateUrl: 'app/inventoryTables/inventory.html',
 			controller: 'InventoryTableCtrl'
 		})
+		.when('/login', {
+			templateUrl: 'app/login/login.html',
+			controller: 'LoginCtrl'
+		})
 		
 	.otherwise({
-			redirectTo: '/home'
+			redirectTo: '/'
 		});
 });
 
