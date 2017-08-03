@@ -4,23 +4,33 @@
     </button>
     <h4 class="modal-title text-left">ברוך הבא</h4>
 </div>
+
 <div class="modal-body">
+    <div class="row">
+        <br>
+        <div>
+            <img src="http://localhost/login/app/resources/logo.png" alt="" class="img-responsive center-block img-circle">
+            <br><br>
+            <span></span>
+            <br><br>
+        </div>
+    </div>
     <div class="alert alert-danger" ng-show="failedAttempt">
         Invalid email or password
     </div>
-    
+
     <form class="form-horizontal">
         <div class="form-group">
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="email">
+            <div class="col-sm-8 col-sm-offset-2">
+                <input type="email" class="form-control text-center" id="email" placeholder="Enter email" ng-model="email">
             </div>
-            <label class="control-label col-sm-2" for="email">דוא"ל:</label>
+                <label class="control-label col-sm-1" for="email">דוא"ל:</label>
         </div>
         <div class="form-group">
-            <div class="col-sm-10">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" ng-model="password">
+            <div class="col-sm-8 col-sm-offset-2">
+                <input type="password" class="form-control text-center" id="pwd" placeholder="Enter password" ng-model="password">
             </div>
-            <label class="control-label col-sm-2" for="pwd">סיסמה:</label>            
+            <label class="control-label col-sm-1" for="pwd">סיסמה:</label>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-0 col-sm-12">

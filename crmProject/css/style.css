@@ -1,7 +1,8 @@
 /* main css stylesheet file for project andromeda , i.e Green CRM */
 
 body {
-	direction:rtl;
+  direction:rtl;
+  text-align: right;
 	font-family:Assistant;
 }
 
