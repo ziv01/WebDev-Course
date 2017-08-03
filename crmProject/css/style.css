@@ -39,13 +39,15 @@ HEX: #618685
   background-color: #fefbd8;
 }
 
+
 .navbar-default {
   background-color: #d5e1df;
-  border-color: #86af49;
+  border-color: #257e94;
 }
 .navbar-default .navbar-brand {
   color: #257e94;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #0b0a6b;
@@ -107,4 +109,7 @@ HEX: #618685
     color: #0b0a6b;
     background-color: #86af49;
   }
+}
+.nav-links li a {
+  font-size: 18px;
 }

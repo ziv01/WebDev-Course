@@ -20,17 +20,12 @@ crmApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $loca
         if (user !== null) {
             activeUser.login(user);
             $uibModalInstance.close("Logged-in");
-            $location.path("/recipes")
+            //$location.path("/")
         } else {
             $scope.failedAttempt = true;
         }
-
-
-
-
-        //console.log($scope.email + " " + $scope.password)
     }
-
+  
     var getLoggedInUser = function() {
         for (var i = 0; i < $scope.users.length; i++) {
             if ($scope.users[i].email === $scope.email && $scope.users[i].password === $scope.password) {

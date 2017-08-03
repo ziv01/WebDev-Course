@@ -30,12 +30,13 @@
   <script type="text/javascript" src="app/technicalTables/techTableCtrl.js"></script>
   <script type="text/javascript" src="app/salesTables/salesTableCtrl.js"></script>
   <script type="text/javascript" src="app/inventoryTables/inventoryTableCtrl.js"></script>
-  
+  <!-- Local CSS stylesheet section -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" ng-controller="NavCtrl">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
       aria-expanded="false">
 			<span class="icon-bar"></span>
@@ -48,15 +49,16 @@
         <div class="navbar-header navbar-right">
           <a class="navbar-brand tooltip-bottom" href="#!/" data-toggle="tooltip" data-placement="bottom" title="דף בית"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
         </div>
-        <div>
-          <ul class="nav navbar-nav pull-right">
-            <li><a href="#!inventory"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול מוצרים</a></li>
-            <li><a href="#!technical"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול אנשי שטח</a></li>
-            <li><a href="#!sales"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;מודול מכירות</a></li>
-            <li><a href="#!customers"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;מודול לקוחות</a></li>
+        <div >
+          <ul class="nav navbar-nav pull-right nav-links">
+            <li ng-show="isLoggedIn()"><a href="#!inventory"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול מוצרים</a></li>
+            <li ng-show="isLoggedIn()"><a href="#!technical"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול אנשי שטח</a></li>
+            <li ng-show="isLoggedIn()"><a href="#!sales"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;מודול מכירות</a></li>
+            <li ng-show="isLoggedIn()"><a href="#!customers"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;מודול לקוחות</a></li>
           </ul>
           <ul class="nav navbar-nav">
-            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="התחבר למערכת" ng-click="login()"><img src="app/resources/login.png" class="img-responsive" alt="login">
+            <li ng-hide="isLoggedIn()"><a href="#" data-toggle="tooltip" data-placement="bottom" title="התחבר למערכת" ng-click="login()"><img src="app/resources/login.png" class="img-responsive" alt="login">
+            <li ng-show="isLoggedIn()"><a href="#" data-toggle="tooltip" data-placement="bottom" title="התנתק ממערכת" ng-click="logout()"><img src="app/resources/logout_icon.png" class="img-responsive" alt="logout">
            </a></li>
           </ul>
         </div>
