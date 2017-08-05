@@ -15,7 +15,8 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#!inventory" data-toggle="tooltip" data-placement="bottom" title="מחק רשומה"><img src="app/resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
+        <li><label style="padding-top:15px;" for="submit-form" tabindex="0"><img src="app/resources/if_Save_1493294.png" class="img-responsive addnew" alt="Image" width="24" height="24"></label></li>                                        
+        <li><a href="#!inventory" data-toggle="tooltip" data-placement="bottom" title="מחק רשומה"  ng-hide="!inventoryDetails.length"><img src="app/resources/RemoveUser.png" class="img-responsive" alt="Image" width="24" height="24" ng-click="remove()"></a></li>
         <li><a href="#!inventory" data-toggle="tooltip" data-placement="bottom" title="הוסף רשומה"><img src="app/resources/AddUser.png" class="img-responsive addnew" alt="Image" width="24" height="24" ng-click="addNew()"></a></li>
         <li><a href="#"></a></li>
       </ul>
@@ -29,7 +30,7 @@
   </nav>
   <div class="row">
     <div class="col-md-12" class="container">
-      <form ng-submit="addNew()">
+      <form name="inventory" id="formID">
         <table class="table table-striped table-bordered">
           <thead>
             <tr>
@@ -42,7 +43,7 @@
               <th class="text-center">קטגוריה</th>
               <th class="text-center">כמות במלאי</th>
               <th class="text-center">מחיר ליח'</th>
-              <th class="text-center">תיאור הפריט</th>              
+              <th class="text-center">תיאור הפריט</th>
             </tr>
           </thead>
           <tbody>
@@ -51,7 +52,7 @@
               <td><input type="checkbox" class="text-center" ng-model="inventoryDetail.checked" data-ng-checked="selectAllInventory"></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.inventoryName" required/></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.manufacturer" required/></td>
-              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.dealer" required/></td>              
+              <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.dealer" required/></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.itemID" required/></td>
               <td><input type="text" class="form-control text-center" ng-model="inventoryDetail.category" required/></td>
               <td><input type="number" class="form-control text-center" ng-model="inventoryDetail.itemCount" required/></td>
@@ -60,6 +61,10 @@
             </tr>
           </tbody>
         </table>
+        <div class="form-group">
+          <input type="submit" id="submit-form" class="hidden" />
+          <input ng-show="null" type="submit" class="btn btn-primary addnew pull-right" value="Add New">
+        </div>
       </form>
     </div>
   </div>

@@ -39,6 +39,9 @@ crmApp.controller("TableCtrl", function ($scope, $http) {
                         }
                 }
         };
+        $scope.updateFrom = function() {
+                document.getElementById("formID").submit();
+        }
 
         $scope.sortType = 'name'; // set the default sort type
         $scope.sortReverse = false; // set the default sort order
