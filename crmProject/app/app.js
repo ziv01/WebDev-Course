@@ -25,6 +25,11 @@ crmApp.config(function ($routeProvider) {
         .when("/contact", {
             templateUrl: "app/contactForm/contact.html",
             controller: "ContactFormCtrl"            
+        })
+        .otherwise("/", {
+            templateUrl: "app/home/home.html",
+            controller: "HomeCtrl"
         });
+        
 
 });
