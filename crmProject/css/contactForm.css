@@ -1,0 +1,7 @@
+/* Styles go here */
+
+
+#success_message{ display: none;}
+#contact_form {
+  direction: ltr;
+}

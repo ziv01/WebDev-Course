@@ -30,9 +30,13 @@
   <script type="text/javascript" src="app/technicalTables/techTableCtrl.js"></script>
   <script type="text/javascript" src="app/salesTables/salesTableCtrl.js"></script>
   <script type="text/javascript" src="app/inventoryTables/inventoryTableCtrl.js"></script>
-  <!-- Local CSS stylesheet section -->
+  <script type="text/javascript" src="app/contactForm/contactFormCtrl.js"></script>
+
+  <!-- Local CSS stylesheet section   -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/login.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet"> -->
+  <link href="css/contactForm.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -51,6 +55,7 @@
         </div>
         <div >
           <ul class="nav navbar-nav pull-right nav-links">
+            <li ng-hide="isLoggedIn()"><a href="#!contact"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;צור קשר</a></li>            
             <li ng-show="isLoggedIn()"><a href="#!inventory"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול מוצרים</a></li>
             <li ng-show="isLoggedIn()"><a href="#!technical"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;מודול ניהול אנשי שטח</a></li>
             <li ng-show="isLoggedIn()"><a href="#!sales"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;מודול מכירות</a></li>
