@@ -145,7 +145,7 @@ only screen and (max-width: 760px),
 		padding-left: 50%; 
 	}
 	
-	td:before { 
+#customerformID	td:before { 
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
@@ -155,4 +155,86 @@ only screen and (max-width: 760px),
 		padding-right: 10px; 
 		white-space: nowrap;
 	}
+	
 
+	/*Label the data */
+	
+	td:nth-of-type(1):before { content: ""; }  
+	td:nth-of-type(2):before { content: "שם לקוח"; }
+	td:nth-of-type(3):before { content: "כתובת לקוח"; }
+	td:nth-of-type(4):before { content: "דואל"; }
+	td:nth-of-type(5):before { content: "טלפון"; }
+	td:nth-of-type(6):before { content: "טלפון סלולרי"; }
+	td:nth-of-type(7):before { content: "שם החברה"; }
+	td:nth-of-type(8):before { content: "מספר ח-פ"; }
+}
+
+#techformID	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+
+	/*Label the data */
+	
+	td:nth-of-type(1):before { content: ""; }  
+	td:nth-of-type(2):before { content: "שם איש שטח"; }
+	td:nth-of-type(3):before { content: "מספר קריאה"; }
+	td:nth-of-type(4):before { content: "תיאור תקלה"; }
+	td:nth-of-type(5):before { content: "שם לקוח"; }
+	td:nth-of-type(6):before { content: "דואל לקוח"; }
+	td:nth-of-type(7):before { content: "טלפון לקוח"; }
+	td:nth-of-type(8):before { content: "טלפון נייד לקוח"; }
+
+
+#inventoryformID	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+
+	/*Label the data */
+	
+	td:nth-of-type(1):before { content: ""; }  
+	td:nth-of-type(2):before { content: "שם פריט"; }
+	td:nth-of-type(3):before { content: "שם יצרן"; }
+	td:nth-of-type(4):before { content: "שם ספק"; }
+	td:nth-of-type(5):before { content: "קוד פריט"; }
+	td:nth-of-type(6):before { content: "קטגוריה"; }
+	td:nth-of-type(7):before { content: "כמות במלאי"; }
+	td:nth-of-type(8):before { content: "מחיר ליחידה"; }
+	td:nth-of-type(8):before { content: "תיאור הפריט"; }
+
+#saleformID	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+}
+	/*Label the data */
+	
+	td:nth-of-type(1):before { content: ""; }  
+	td:nth-of-type(2):before { content: "איש המכירות"; }
+	td:nth-of-type(3):before { content: "מספר הצעת מחיר"; }
+	td:nth-of-type(4):before { content: "תיאור הפריט"; }
+	td:nth-of-type(5):before { content: "תקציב רכש"; }
+	td:nth-of-type(6):before { content: "הלקוח"; }
+	td:nth-of-type(7):before { content: "דואל לקוח"; }
+	td:nth-of-type(8):before { content: "נייד לקוח"; }
+	td:nth-of-type(8):before { content: "רכישות קודמות"; }
