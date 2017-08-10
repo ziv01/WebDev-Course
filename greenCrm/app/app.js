@@ -17,9 +17,19 @@ crmApp.config(function ($routeProvider) {
         .when("/sales", {
             templateUrl: "app/salesTables/sales.html",
             controller: "SalesTableCtrl"
-        }).when("/inventory", {
+        })
+        .when("/inventory", {
             templateUrl: "app/inventoryTables/inventory.html",
             controller: "InventoryTableCtrl"            
+        })
+        .when("/contact", {
+            templateUrl: "app/contactForm/contact.html",
+            controller: "ContactFormCtrl"            
+        })
+        .otherwise("/", {
+            templateUrl: "app/home/home.html",
+            controller: "HomeCtrl"
         });
+        
 
 });
