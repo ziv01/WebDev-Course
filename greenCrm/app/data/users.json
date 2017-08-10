@@ -1,0 +1,9 @@
+[
+    {
+        "email":"ziv@ziv.com",
+        "password": "123",
+        "firstName":"Ziv",
+        "lastName": "Knobler",
+        "data":"app/data/nir-recipes.json"
+    }
+]
